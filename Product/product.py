@@ -21,8 +21,8 @@ class Product():
         self.mailLimitationValue = None
         try:
             self.getInformation()
-        except:
-            raise Exception
+        except Exception as e:
+            raise e
     def getInformation(self):
         data = xmltodict.parse(self.getCompanyDataFromUrl('details'))[self.name]
         self.password= data[password]
@@ -37,8 +37,9 @@ class Product():
         with urllib.request.urlopen(baseUrl) as data:
             return self.decrypt(data.read())
     def getEmail(self):
-        return self.getCompanyDataFromUrl('email').read().decode("utf8")[:-1].split("\n")
-
+        data= self.getCompanyDataFromUrl('emails')
+        print(data)
+        return data.decode("utf8")[:-2].split("\r\n")
     def encrypt(self, data):
         return data
 
@@ -62,6 +63,3 @@ class Product():
             return False
         return True
 
-m = Product("deneme")
-print(m.isLimit())
-print(m.isValid())

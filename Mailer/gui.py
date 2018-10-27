@@ -31,6 +31,14 @@ defaultMessage = ''
 defaultStartPoint = 0
 encoding = ['utf-8','iso-8859-9']
 
+# url = 'https://raw.githubusercontent.com/furkankykc/EmailAccounts/master/xbet'
+
+# def getCompanyDataFromUrl(name,dir=''):
+#     baseUrl = url
+#     print(baseUrl)
+#     with urllib.request.urlopen(baseUrl) as data:
+#         return (data.read().decode("utf8")[:-1].split("\n"))
+
 class Gui():
     globals()
 
@@ -38,9 +46,13 @@ class Gui():
         self.root = Tk()
         self.root.title('Automated Mailer System')
         try:
-            self.getEmail(Product(username).getEmail())
-        except:
+            self.email=(Product(username).getEmail())
+            print(self.email)
+            # self.email = getCompanyDataFromUrl(username)
+            # print(self.email)
+        except Exception as e :
             messagebox.showerror("Hata","Hesabınızla ilişkili mail adresi bulunamadı")
+            print(e)
             self.root.quit()
             return
         self.prepareTextBoxs()

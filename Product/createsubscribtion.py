@@ -11,7 +11,8 @@ subType = {
     "silver":[100000,1],#289
     "platinium":[500000,1],#699
     "gold":[500000,6],#1499
-    "diamond":[9999999999,12]#3699
+    "diamond":[9999999999,12],#3699
+    "special":[100000,3]#3699
 }
 def getGitRepo():
     g = Github("furkankykc", "8989323846q")
@@ -19,13 +20,18 @@ def getGitRepo():
 
 
 def subscribtion(name, password, subType):
-    filePath = '/Product/' + name + '/details'
+    basePath = '/Product/' + name
+    detailsPath = '/Product/' + name + '/details'
+    emailPath = '/Product/' + name + '/emails'
     try:
-        getGitRepo().create_file(filePath, "Creating {0} 's {1} months subscription with {2} limit.".format(name,subType[1],subType[0]), saveXmlDataSource(name,password,expDate(subType[1]*30),subType[0]))
+        getGitRepo().create_file(detailsPath, "Creating {0} 's {1} months subscription with {2} limit.".format(name,subType[1],subType[0]), saveXmlDataSource(name,password,expDate(subType[1]*30),subType[0]))
+        getGitRepo().create_file(emailPath,"Creating {0} 's email directory".format(name),"")
         print("Creating {0} 's {1} months subscription with {2} limit.".format(name,subType[1],subType[0]))
     except:
-        file = getGitRepo().get_file_contents(filePath)
-        getGitRepo().update_file(filePath, "Updating {0} 's {1} months subscription with {2} limit.".format(name,subType[1],subType[0]),saveXmlDataSource(name,password,expDate(subType[1]*30),subType[0]), file.sha)
+        detailsFile = getGitRepo().get_file_contents(detailsPath)
+        emailsFile = getGitRepo().get_file_contents(emailPath)
+        getGitRepo().update_file(detailsPath, "Updating {0} 's {1} months subscription with {2} limit.".format(name,subType[1],subType[0]),saveXmlDataSource(name,password,expDate(subType[1]*30),subType[0]), detailsFile.sha)
+        getGitRepo().update_file(emailPath, "Creating {0} 's email directory".format(name),emailsFile.sha)
         print( "Updating {0} 's {1} months subscription with {2} limit.".format(name,subType[1],subType[0]))
 def expDate(day):
     return (datetime.datetime.now() + datetime.timedelta(day))
@@ -48,5 +54,5 @@ def prettify(elem):
     var = reparsed.toprettyxml(indent="\t")
     print(var)
     return var
-subscribtion("deneme","8989", subType["diamond"])
-# print(subType["gold"][0])
+subscribtion("xbet","8989", subType["special"])
+print(subType["gold"][0])

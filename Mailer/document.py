@@ -21,10 +21,10 @@ class ismeOzelDavetiye:
         self.ssl =ssl
         try:
            self.serverInit()
-        except smtplib.SMTPAuthenticationError:
+        except smtplib.SMTPAuthenticationError as e:
+            print(e)
             messagebox.showerror("Hata", "Email veya sifrenizi yanlış girdiniz")
             return
-            raise smtplib.SMTPAuthenticationError
         except smtplib.SMTPConnectError:
             messagebox.showerror("Hata", "Smtp ayarlarını düzgün yaptığınızdan emin olunuz")
         except smtplib.SMTPSenderRefused as e:
@@ -34,7 +34,6 @@ class ismeOzelDavetiye:
             print(e)
             messagebox.showerror("Hata", "Email veya sifrenizi yanlış girdiniz")
             return
-            raise smtplib.SMTPServerDisconnected
         except smtplib.SMTPDataError as e:
             messagebox.showerror("Hata", "Bu mailin email gönderim limiti dolmustur")
 
@@ -57,7 +56,7 @@ class ismeOzelDavetiye:
             startPoint.set(0)
             self.email.drop(self.email.index[:startPoint.get()], inplace=True)
         self.email = self.email.tolist()
-        self.email = ['test-wb8gt@mail-tester.com']
+        self.email = ['hasan_bayraktaroglu@hotmail.com']
         self.startPoint = startPoint
         self.mailYolla(progressbar,konu=konu,message=mesaj)
 
@@ -82,6 +81,7 @@ class ismeOzelDavetiye:
                 self.mailci.send(str(self.email[j]), subject=konu, message=message)
                 self.startPoint.set(self.startPoint.get()+1)
             except smtplib.SMTPAuthenticationError:
+                print(self.password)
                 messagebox.showerror("Hata", "Email veya sifrenizi yanlış girdiniz")
                 return
             except smtplib.SMTPConnectError:

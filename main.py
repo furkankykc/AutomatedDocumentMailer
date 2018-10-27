@@ -1,9 +1,9 @@
 
 import sys
-
+import pandas
 from document import ismeOzelDavetiye
+from loginform import LoginGui
 from gui import Gui
-
 
 def start(*args):
     while len(sys.argv)!=7:
@@ -24,7 +24,8 @@ def start(*args):
 
 
 if __name__ == "__main__":
-    Gui()
+    LoginGui()
+    #Gui("hilbet")
     #start(sys.argv)
 
 

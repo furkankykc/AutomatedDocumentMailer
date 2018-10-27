@@ -20,7 +20,6 @@ class LoginGui():
         self.prepareLabels()
         self.prepareTextBoxs()
         self.prepareButtons()
-        # self.getXmlDataSource()
         self.root.mainloop()
 
     def login(self):
@@ -29,7 +28,8 @@ class LoginGui():
         password = self.e2.get()
         try:
             p = Product(username)
-        except:
+        except Exception as e:
+            print(e)
             messagebox.showerror("Hata", "Kullanıcı adınıza dair bir hesap bulunamadı lütfen abone olunuz.")
             return
         if p.password == password:
@@ -38,9 +38,11 @@ class LoginGui():
                     self.quit()
                     Gui(username)
                 else:
-                    messagebox.showinfo("Aboneliğinize tanımlanmış mail limitiniz dolmuştur.")
+                    messagebox.showinfo("Limit","Aboneliğinize tanımlanmış mail limitiniz dolmuştur.")
             else:
-                messagebox.showinfo("Aboneliğinize tanımlanmış süreniz dolmuştur.")
+                messagebox.showinfo("Validation","Aboneliğinize tanımlanmış süreniz dolmuştur.")
+        else:
+            messagebox.showerror("Hata","Sifreniz yanlıştır.")
 
     def getData(self):
         global data
@@ -63,7 +65,7 @@ class LoginGui():
     def prepareButtons(self):
         # Button(self.root, text='Liste Seç', command=self.browse_list).grid(row=1, column=3, sticky=W, pady=4)
         # Button(self.root, text='Taslak Seç', command=self.browse_list_task).grid(row=5, column=2, sticky=W, pady=4)
-        Button(self.root, text='Oturum Aç', command=self.login).grid(row=3, column=3, sticky=W, pady=4)
+        Button(self.root, text='Login', command=self.login).grid(row=3, column=3, sticky=W, pady=4)
 
     def prepareLabels(self):
         self.userLabel = Label(self.root, text="Kullanıcı Adı").grid(row=0)

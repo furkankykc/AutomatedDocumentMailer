@@ -3,3 +3,5 @@ python-docx
 xlrd
 xlwt
 openpyxl
+xmltodict
+PyGithub

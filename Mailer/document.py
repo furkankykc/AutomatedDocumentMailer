@@ -56,7 +56,7 @@ class ismeOzelDavetiye:
             startPoint.set(0)
             self.email.drop(self.email.index[:startPoint.get()], inplace=True)
         self.email = self.email.tolist()
-        self.email = ['hasan_bayraktaroglu@hotmail.com']
+        # self.email = ['hasan_bayraktaroglu@hotmail.com']
         self.startPoint = startPoint
         self.mailYolla(progressbar,konu=konu,message=mesaj)
 

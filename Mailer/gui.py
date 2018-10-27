@@ -255,7 +255,7 @@ class Gui():
                 self.prettify(
                     self.xmlConverter(properties,
                                       self.xmlConverter(email, self.emailText.get()),
-                                      self.xmlConverter(password, self.passwordText.get()),
+                                      self.xmlConverter(password, self.passwordText.get().replace("}","}}").replace("{","{{")),
                                       self.xmlConverter(message, self.messageFileLocation),
                                       self.xmlConverter(subject, self.subjectText.get()),
                                       self.xmlConverter(list, self.listFileLocation),
@@ -267,8 +267,8 @@ class Gui():
 
             )
 
-    def xmlConverter(self, xmlColon, *variable):
-        return ("<{0}>" + (('%s' * len(variable)).lstrip() % variable) + "</{0}>").format(xmlColon)
+    def xmlConverter(self,xmlColon, *variable):
+        return ('<%s>' % xmlColon + (('%s' * len(variable)).lstrip() % variable) + '</%s>' % xmlColon)
 
     def prettify(self, elem):
         """Return a pretty-printed XML string for the Element.

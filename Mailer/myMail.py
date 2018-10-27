@@ -18,7 +18,7 @@ class Mail:
             ['Content-Location','tr-Turkey'],
             ['Content-Language','tr-Tr'],
             ['Accept-Language','tr-Tr'],
-            ["X-Priority","5 (Low)"],
+            # ["X-Priority","5 (Low)"],
             # ['Reply-To','Gaming Bulten<bulten@hilbet.com>']
 
         ]
@@ -29,7 +29,7 @@ class Mail:
         try:
             if self.ssl:
                 self.server = smtplib.SMTP_SSL(self.smtp)
-            # self.server.starttls()
+                # self.server.starttls()
                 self.server.ehlo()
             else:
                 self.server = smtplib.SMTP(self.smtp)
@@ -99,7 +99,8 @@ class Mail:
         composed = outer.as_string()
         try:
 
-            self.server.sendmail(self.who,recipent, composed)
+            self.server.sendmail(self.who,[recipent], composed)
+            self.server.set_debuglevel(1)
             Logger("Sender:{0} | Recipent:{1}, OK".format(self.who,recipent))
 
             return True

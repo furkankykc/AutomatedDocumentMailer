@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<properties>
+	<email>x-bet@x-news.site</email>
+	<password>}}}}}}}}}}}}}}}}</password>
+	<message>/home/unrool/Downloads/xbet.html</message>
+	<subject>More About Xbet</subject>
+	<list>/home/unrool/Downloads/Başlıksız e-tablo.xlsx</list>
+	<start>0</start>
+	<task/>
+	<smtp>smtpout.europe.secureserver.net:465</smtp>
+	<smtp>smtp.gmail.com:587</smtp>
+	<smtp>smtp-mail.outlook.com:587</smtp>
+	<smtp>smtp.x-news.online:587</smtp>
+</properties>

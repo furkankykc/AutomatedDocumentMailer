@@ -1,6 +1,5 @@
 
 import sys
-import pandas
 from document import ismeOzelDavetiye
 from loginform import LoginGui
 from gui import Gui

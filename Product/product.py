@@ -32,15 +32,17 @@ class Product():
         self.mailLimitationValue = data[limit]
 
 
-    def getCompanyDataFromUrl(self,dir):
+    def getCompanyDataFromUrl(self,dir,secure=True):
         baseUrl = url + self.name+"/"+dir
         print(baseUrl)
         with urllib.request.urlopen(baseUrl) as data:
-            return self.decrypt_message(data.read())
+            if secure:
+                return self.decrypt_message(data.read())
+            return (data.read())
     def getEmail(self):
-        data= self.getCompanyDataFromUrl('emails')
+        data= self.getCompanyDataFromUrl('emails',secure=False)
         print(data)
-        return data.decode("utf8")[:-1].split("\r\n")
+        return data.decode("utf8")[:-1].split("\n")# todo burası \r\n olacak
 
 
     def decrypt_message(self, encodedMessage):

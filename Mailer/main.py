@@ -24,7 +24,7 @@ def start(*args):
 
 if __name__ == "__main__":
     # LoginGui()
-    Gui("sad")
+    Gui("xbet")
     #start(sys.argv)
 
 

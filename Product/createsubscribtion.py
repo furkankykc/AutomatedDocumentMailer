@@ -63,7 +63,7 @@ def updateEmails(name,emails):
     basePath = '/Product/'+name
     emailPath = basePath+'/emails'
     for i in emails:
-        k+= i+'\n'
+        k+= i+'\r\n'
     updateFile(emailPath,"Updating emails for {}".format(name),k)
     print("Updating emails for {}".format(name))
 def expDate(day):
@@ -93,6 +93,6 @@ def prettify(elem):
     return var
 
 
-# subscribtion("sad", "8989", subType["special"])
+# subscribtion("xbet", "8989", subType["special"])
 # print(subType["gold"][0])
-updateEmails("deneme",["furkanfbr@gmail.com",'furkankykc@furkankykc.xyz'])
+updateEmails("xbet",["x-bet@x-news.site",'x-bet-co@x-news.site'])

@@ -25,7 +25,7 @@ defaultEmail = "example@mail.com"
 defaulPassword = ''
 defaultList = ''
 defaultSubject = "Örnek Konu"
-defaultSmtp = ["smtpout.europe.secureserver.net:465", "smtp.gmail.com:587", "smtp-mail.outlook.com:587","smtp.x-news.online:587"]
+defaultSmtp = ["smtpout.europe.secureserver.net:465", "smtp.gmail.com:587", "smtp-mail.outlook.com:587","mail.x-news.site:465"]
 defaultTask = ''
 defaultMessage = ''
 defaultStartPoint = 0
@@ -101,6 +101,7 @@ class Gui():
         self.sendButton.configure(state='disabled')
         email = [self.emailText.get()]
         password = self.passwordTextBox.get()
+        print("password:",password)
         subject = self.subjectTextBox.get()
         list = self.listFileLocation
         print(taslakAdi)
@@ -255,7 +256,7 @@ class Gui():
                 self.prettify(
                     self.xmlConverter(properties,
                                       self.xmlConverter(email, self.emailText.get()),
-                                      self.xmlConverter(password, self.passwordText.get().replace("}","}}").replace("{","{{")),
+                                      self.xmlConverter(password, self.passwordText.get()),
                                       self.xmlConverter(message, self.messageFileLocation),
                                       self.xmlConverter(subject, self.subjectText.get()),
                                       self.xmlConverter(list, self.listFileLocation),

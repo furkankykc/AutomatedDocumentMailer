@@ -5,6 +5,7 @@ import xmltodict
 import datetime
 from Crypto.PublicKey import RSA
 import base64
+from Product.createsubscribtion import updateFile,saveXmlDataSource
 url = 'https://raw.githubusercontent.com/furkankykc/EmailAccounts/master/Product/'
 email = 'email'
 password = 'password'
@@ -30,6 +31,7 @@ class Product():
         self.validationDate = data[validationDate]
         print("valid =",self.validationDate)
         self.mailLimitationValue = data[limit]
+        print(self.mailLimitationValue)
 
 
     def getCompanyDataFromUrl(self,dir,secure=True):
@@ -39,10 +41,16 @@ class Product():
             if secure:
                 return self.decrypt_message(data.read())
             return (data.read())
+
+    def updateLimit(self, limit):
+        detailsPath = '/Product/' + self.name + '/details'
+        commit = "Used {} emails".format(limit)
+        updateFile(detailsPath, commit, content=saveXmlDataSource(self.name,self.password,self.validationDate,int(self.mailLimitationValue)-limit))
+        print(commit)
     def getEmail(self):
         data= self.getCompanyDataFromUrl('emails',secure=False)
         print(data)
-        return data.decode("utf8")[:-1].split("\n")# todo burası \r\n olacak
+        return data.decode("utf8")[:-1].replace("\r","").split("\n")# todo burası \r\n olacak
 
 
     def decrypt_message(self, encodedMessage):

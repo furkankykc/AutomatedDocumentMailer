@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <properties>
-	<email>x-bet@x-news.site</email>
-	<password>dk4402gg}i%c</password>
-	<message>/home/furkankykc/Downloads/MainFix2(1).html</message>
+	<email>info-xbet@x-news.online</email>
+	<password>(a@L!wx7</password>
+	<message>/home/furkankykc/Downloads/index-01.html</message>
 	<subject>More About Xbet</subject>
 	<list>/home/furkankykc/Downloads/Başlıksız e-tablo.xlsx</list>
 	<start>11</start>
@@ -10,5 +10,6 @@
 	<smtp>smtpout.europe.secureserver.net:465</smtp>
 	<smtp>smtp.gmail.com:587</smtp>
 	<smtp>smtp-mail.outlook.com:587</smtp>
-	<smtp>mail.x-news.site:465</smtp>
+	<smtp>mail.x-news.site:587</smtp>
+	<smtp>smtp.x-news.online:587</smtp>
 </properties>

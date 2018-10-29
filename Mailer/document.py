@@ -48,7 +48,7 @@ class ismeOzelDavetiye:
             raise KeyError
         try:
             if startPoint.get()>=0 and startPoint.get()!=None:
-                if startPoint.get()>len(self.email):
+                if startPoint.get()>=len(self.email):
                     messagebox.showerror("Hata","Başlangıç değeri epostalardan fazla olamaz")
                     return
 
@@ -56,7 +56,7 @@ class ismeOzelDavetiye:
             startPoint.set(0)
             self.email.drop(self.email.index[:startPoint.get()], inplace=True)
         self.email = self.email.tolist()
-        # self.email = ['hasan_bayraktaroglu@hotmail.com']
+        # self.email = ['totobet100@outlook.com']
         self.startPoint = startPoint
         self.mailYolla(progressbar,konu=konu,message=mesaj)
 

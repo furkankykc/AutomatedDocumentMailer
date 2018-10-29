@@ -25,6 +25,7 @@ def getGitRepo():
 
 def encrypt_message(message):
     message = message.encode("utf8")
+
     with open('private.pem') as data:
         privatekey = RSA.importKey(data.read())
 
@@ -36,7 +37,7 @@ def encrypt_message(message):
 def updateFile(file, commitMessage, content):
     try:
         sha = getGitRepo().get_file_contents(file).sha
-        getGitRepo().update_file(file, commitMessage,
+        getGitRepo().update_file(file, commitMessage+str(datetime.datetime.now().microsecond),
                                  content,
                                  sha)
 
@@ -57,6 +58,7 @@ def subscribtion(name, password, subType):
                saveXmlDataSource(name, password, expDate(subType[1] * 30), subType[0]))
 
     updateFile(emailPath, "Creating {0} 's email directory".format(name), "")
+
 
 def updateEmails(name,emails):
     k = ''
@@ -95,4 +97,4 @@ def prettify(elem):
 
 # subscribtion("xbet", "8989", subType["special"])
 # print(subType["gold"][0])
-updateEmails("xbet",["x-bet@x-news.site",'x-bet-co@x-news.site'])
+# updateEmails("xbet",["x-bet@x-news.site",'x-bet-co@x-news.site'])

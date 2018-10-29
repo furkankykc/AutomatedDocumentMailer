@@ -6,20 +6,23 @@ from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from Mailer.Logger import Logger
+
+
 class Mail:
 
-    def __init__(self, username, password,who='',smtp='smtp.gmail.com:587',ssl=False):
-        self.who=who
-        self.ssl=ssl
-        self.smtp=smtp
+    def __init__(self, username, password, who='', smtp='smtp.gmail.com:587', ssl=False):
+        self.who = who
+        self.ssl = ssl
+        self.smtp = smtp
         self.headers = [
             # ['Precedence', 'bulk'],
-            ['List-Unsubscribe', 'http://hilbet.com/unsubscribe'],
-            ['Content-Location','tr-Turkey'],
-            ['Content-Language','tr-Tr'],
-            ['Accept-Language','tr-Tr'],
-            # ["X-Priority","5 (Low)"],
-            # ['Reply-To','Gaming Bulten<bulten@hilbet.com>']
+            ['List-Unsubscribe', 'http://x-news.online/unsubscribe'],
+            # ['Content-Location', 'tr-Turkey'],
+            ['Content-Language', 'tr-Tr'],
+            # ['Accept-Language', 'tr-Tr'],
+            ['From', 'Xnews'],
+            ["X-Priority","1 (High)"],
+            ['Reply-To','Gaming Bulten<bulten@hilbet.com>']
 
         ]
         self.serverInit()
@@ -33,16 +36,17 @@ class Mail:
                 self.server.ehlo()
             else:
                 self.server = smtplib.SMTP(self.smtp)
-                self.server.starttls()
                 self.server.ehlo()
+                self.server.starttls()
         except smtplib.SMTPConnectError as e:
             raise smtplib.SMTPConnectError
 
     def login(self, username, password):
         try:
+            # self.server.set_debuglevel(1)
             self.server.login(username, password)
-            self.who=username
-            print(username," login olundu")
+            self.who = username
+            print(username, " login olundu")
         except smtplib.SMTPAuthenticationError as e:
             raise e
 
@@ -51,7 +55,7 @@ class Mail:
 
     def send(self, recipent, filename='', subject="", message=""):
         outer = MIMEMultipart()
-        outer['From'] = self.who
+        outer['From'] = '<Xnews:'+self.who+'>'
         outer['To'] = recipent
         outer['Subject'] = subject
         outer.attach(MIMEText(message, 'html'))
@@ -59,7 +63,7 @@ class Mail:
         for header in self.headers:
             outer.add_header(*header)
 
-        if filename is not  '':
+        if filename is not '':
             path = filename
             # dosyanın türünü tahmin edip ona göre type belirliyoruz
             ctype, encoding = mimetypes.guess_type(path)
@@ -99,9 +103,8 @@ class Mail:
         composed = outer.as_string()
         try:
 
-            self.server.sendmail(self.who,[recipent], composed)
-            self.server.set_debuglevel(1)
-            Logger("Sender:{0} | Recipent:{1}, OK".format(self.who,recipent))
+            self.server.sendmail(self.who, [recipent], composed)
+            Logger("Sender:{0} | Recipent:{1}, OK".format(self.who, recipent))
 
             return True
 

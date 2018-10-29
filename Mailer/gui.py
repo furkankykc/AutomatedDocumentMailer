@@ -46,7 +46,8 @@ class Gui():
         self.root = Tk()
         self.root.title('Automated Mailer System')
         try:
-            self.email=(Product(username).getEmail())
+            self.product = Product(username)
+            self.email=(self.product.getEmail())
             print(self.email)
             # self.email = getCompanyDataFromUrl(username)
             # print(self.email)
@@ -116,6 +117,11 @@ class Gui():
                 else:
                     interval = -1
             try:
+
+                self.startText.configure(state='disabled')
+                subLimit = self.startPoint.get()
+                if int(self.startPoint.get())<0:
+                    self.startPoint.set(0)
                 progress = ismeOzelDavetiye(taslakAdi, str(list), (email), str(password), str(subject), messageData, "",
                                  self.smtpValue.get(),
                                  progressbar=self.progressBar,
@@ -123,6 +129,8 @@ class Gui():
                                  startPoint=self.startPoint,
                                             ssl = self.ssl.get()
                                  )
+                self.product.updateLimit(int(self.startPoint.get())-int(subLimit))
+                self.startText.configure(state='normal')
                 self.sendButton.configure(state='normal')
 
             except Exception as e:
@@ -130,9 +138,11 @@ class Gui():
 
                 messagebox.showerror("Hata","Bilinmeyen bir hata yüzünden program duraklatıldı lütfen tekrar başlatınız\n{0}".format(e))
                 self.sendButton.configure(state='normal')
+                self.startText.configure(state='normal')
         except FileNotFoundError as e:
             print(e)
             messagebox.showerror("Hata", "Mesaj Dosyası Bulunamadı")
+            self.startText.configure(state='normal')
             self.sendButton.configure(state='normal')
 
     def prepareLabels(self):

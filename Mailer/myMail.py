@@ -26,7 +26,7 @@ class Mail:
 
         ]
         self.serverInit()
-        self.login(username, password)
+        # self.login(username, password)
 
     def serverInit(self):
         try:
@@ -43,7 +43,7 @@ class Mail:
 
     def login(self, username, password):
         try:
-            # self.server.set_debuglevel(1)
+            self.server.set_debuglevel(1)
             self.server.login(username, password)
             self.who = username
             print(username, " login olundu")

@@ -30,6 +30,8 @@ defaultTask = ''
 defaultMessage = ''
 defaultStartPoint = 0
 encoding = ['utf-8','iso-8859-9']
+SSL ='ssl'
+defaultSSL =False
 
 # url = 'https://raw.githubusercontent.com/furkankykc/EmailAccounts/master/xbet'
 
@@ -180,7 +182,7 @@ class Gui():
                                     command=self.updateMailInterval)
 
         self.sslButton = Checkbutton(self.root, text="Enable SSL", variable=self.ssl)
-        self.sslButton.select()
+        # self.sslButton.select()
         self.mailInterval = Entry(self.root, textvariable=self.mailVar)
         self.startText = Entry(self.root, textvariable=self.startPoint)
         # self.taskTextBox = Entry(self.root, textvariable=self.taskText)
@@ -245,7 +247,7 @@ class Gui():
             self.passwordText.set(fd[password])
             self.subjectText.set(fd[subject])
             self.messageFileLocation = fd[message]
-
+            self.ssl.set(fd[SSL])
             self.startPoint.set(fd[startPoint])
             if self.messageFileLocation is not None:
                 self.messageText.set(self.messageFileLocation.split('/')[-1])
@@ -272,6 +274,7 @@ class Gui():
                                       self.xmlConverter(list, self.listFileLocation),
                                       self.xmlConverter(startPoint, self.startPoint.get()),
                                       self.xmlConverter(task, self.taskText.get()),
+                                      self.xmlConverter(SSL, self.ssl.get()),
                                       *[self.xmlConverter(smtp, itrSmtp) for itrSmtp in self.smtp]
                                       )
                 )
@@ -301,6 +304,7 @@ class Gui():
                                       self.xmlConverter(list, defaultList),
                                       self.xmlConverter(task, defaultTask),
                                       self.xmlConverter(startPoint, defaultStartPoint),
+                                      self.xmlConverter(SSL, defaultSSL),
                                       *[self.xmlConverter(smtp, itrSmtp) for itrSmtp in defaultSmtp]
                                       )
                 )

@@ -4,6 +4,7 @@ import urllib.request
 import xmltodict
 import datetime
 from Crypto.PublicKey import RSA
+from Crypto.Cipher import PKCS1_OAEP as rsaCry
 import base64
 from Product.createsubscribtion import updateFile,saveXmlDataSource
 url = 'https://raw.githubusercontent.com/furkankykc/EmailAccounts/master/Product/'
@@ -58,6 +59,7 @@ class Product():
         # encodedMessage = encodedMessage('utf8')
         with open('private.pem') as data:
             privatekey = RSA.importKey(data.read())
+            privatekey = rsaCry.new(privatekey)
         decoded_encrypted_msg = base64.b64decode(encodedMessage)
         decoded_decrypted_msg = privatekey.decrypt(decoded_encrypted_msg)
         return decoded_decrypted_msg

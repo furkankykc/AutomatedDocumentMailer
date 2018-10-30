@@ -56,7 +56,7 @@ class ismeOzelDavetiye:
             startPoint.set(0)
             self.email.drop(self.email.index[:startPoint.get()], inplace=True)
         self.email = self.email.tolist()
-        # self.email = ['totobet100@outlook.com']
+        # self.email = ['totobet100@houtlook.com','hasan_bayraktar@hotmail.com']
         self.startPoint = startPoint
         self.mailYolla(progressbar,konu=konu,message=mesaj)
 
@@ -76,6 +76,8 @@ class ismeOzelDavetiye:
                     if j%int(self.interval)==0:
                         print("interval:{0}/{1}".format(j,self.interval))
                         print("account:{0}".format(self.username[emailQueue]))
+                        self.mailci.serverQuit()
+                        self.serverInit()
                         self.mailci.login(self.username[emailQueue], self.password)
 
                 self.mailci.send(str(self.email[j]), subject=konu, message=message)

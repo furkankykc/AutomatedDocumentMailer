@@ -23,8 +23,8 @@ def start(*args):
 
 
 if __name__ == "__main__":
-    # LoginGui()
-    Gui("xbet")
+    LoginGui()
+    # Gui("xbet")
     #start(sys.argv)
 
 

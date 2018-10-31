@@ -1,6 +1,5 @@
 import urllib.request
 from tkinter.filedialog import askopenfile
-from xml.dom import minidom
 import xmltodict
 
 from Mailer.document import ismeOzelDavetiye
@@ -8,6 +7,8 @@ from tkinter import *
 from tkinter import ttk
 from tkinter import messagebox
 from Product.product import Product
+from Utils.xmlOperations import *
+
 listeAdi = ""
 taslakAdi = ""
 # hilbet encoding='iso-8859-9'
@@ -20,18 +21,20 @@ task = "task"
 smtp = "smtp"
 properties = "properties"
 xmlFile = 'properties.xml'
-startPoint= 'start'
+startPoint = 'start'
 defaultEmail = "example@mail.com"
 defaulPassword = ''
 defaultList = ''
 defaultSubject = "Örnek Konu"
-defaultSmtp = ["smtpout.europe.secureserver.net:465", "smtp.gmail.com:587", "smtp-mail.outlook.com:587","mail.x-news.site:465"]
+defaultSmtp = ["smtpout.europe.secureserver.net:465", "smtp.gmail.com:587", "smtp-mail.outlook.com:587",
+               "mail.x-news.site:465"]
 defaultTask = ''
 defaultMessage = ''
 defaultStartPoint = 0
-encoding = ['utf-8','iso-8859-9']
-SSL ='ssl'
-defaultSSL =False
+encoding = ['utf-8', 'iso-8859-9']
+SSL = 'ssl'
+defaultSSL = False
+
 
 # url = 'https://raw.githubusercontent.com/furkankykc/EmailAccounts/master/xbet'
 
@@ -49,12 +52,12 @@ class Gui():
         self.root.title('Automated Mailer System')
         try:
             self.product = Product(username)
-            self.email=(self.product.getEmail())
+            self.email = (self.product.getEmail())
             print(self.email)
             # self.email = getCompanyDataFromUrl(username)
             # print(self.email)
-        except Exception as e :
-            messagebox.showerror("Hata","Hesabınızla ilişkili mail adresi bulunamadı")
+        except Exception as e:
+            messagebox.showerror("Hata", "Hesabınızla ilişkili mail adresi bulunamadı")
             print(e)
             self.root.quit()
             return
@@ -104,7 +107,7 @@ class Gui():
         self.sendButton.configure(state='disabled')
         email = [self.emailText.get()]
         password = self.passwordTextBox.get()
-        print("password:",password)
+        print("password:", password)
         subject = self.subjectTextBox.get()
         list = self.listFileLocation
         print(taslakAdi)
@@ -122,23 +125,25 @@ class Gui():
 
                 self.startText.configure(state='disabled')
                 subLimit = self.startPoint.get()
-                if int(self.startPoint.get())<0:
+                if int(self.startPoint.get()) < 0:
                     self.startPoint.set(0)
-                progress = ismeOzelDavetiye(taslakAdi, str(list), (email), str(password), str(subject), messageData, "",
+                ismeOzelDavetiye(taslakAdi, str(list), (email), str(password), str(subject), messageData, "",
                                  self.smtpValue.get(),
                                  progressbar=self.progressBar,
                                  interval=interval,
                                  startPoint=self.startPoint,
-                                            ssl = self.ssl.get()
+                                 ssl=self.ssl.get()
                                  )
-                self.product.updateLimit(int(self.startPoint.get())-int(subLimit))
+                self.product.updateLimit(int(self.startPoint.get()) - int(subLimit))
                 self.startText.configure(state='normal')
                 self.sendButton.configure(state='normal')
 
             except Exception as e:
                 print(e)
 
-                messagebox.showerror("Hata","Bilinmeyen bir hata yüzünden program duraklatıldı lütfen tekrar başlatınız\n{0}".format(e))
+                messagebox.showerror("Hata",
+                                     "Bilinmeyen bir hata yüzünden program duraklatıldı lütfen tekrar başlatınız\n{0}".format(
+                                         e))
                 self.sendButton.configure(state='normal')
                 self.startText.configure(state='normal')
         except FileNotFoundError as e:
@@ -219,8 +224,6 @@ class Gui():
         self.sendButton = Button(self.root, text='Send', command=self.send)
         self.sendButton.grid(row=9, column=3, sticky=W, pady=4)
 
-
-
     def updateMailInterval(self):
         if self.checkVar.get():
             self.mailInterval.configure(state='normal')
@@ -265,47 +268,36 @@ class Gui():
     def saveXmlDataSource(self):
         with open("properties.xml", "w") as fd:
             fd.write(
-                self.prettify(
-                    self.xmlConverter(properties,
-                                      self.xmlConverter(email, self.emailText.get()),
-                                      self.xmlConverter(password, self.passwordText.get()),
-                                      self.xmlConverter(message, self.messageFileLocation),
-                                      self.xmlConverter(subject, self.subjectText.get()),
-                                      self.xmlConverter(list, self.listFileLocation),
-                                      self.xmlConverter(startPoint, self.startPoint.get()),
-                                      self.xmlConverter(task, self.taskText.get()),
-                                      self.xmlConverter(SSL, self.ssl.get()),
-                                      *[self.xmlConverter(smtp, itrSmtp) for itrSmtp in self.smtp]
-                                      )
+                prettify(
+                    xmlConverter(properties,
+                                 xmlConverter(email, self.emailText.get()),
+                                 xmlConverter(password, self.passwordText.get()),
+                                 xmlConverter(message, self.messageFileLocation),
+                                 xmlConverter(subject, self.subjectText.get()),
+                                 xmlConverter(list, self.listFileLocation),
+                                 xmlConverter(startPoint, self.startPoint.get()),
+                                 xmlConverter(task, self.taskText.get()),
+                                 xmlConverter(SSL, self.ssl.get()),
+                                 *[xmlConverter(smtp, itrSmtp) for itrSmtp in self.smtp]
+                                 )
                 )
 
             )
 
-    def xmlConverter(self,xmlColon, *variable):
-        return ('<%s>' % xmlColon + (('%s' * len(variable)).lstrip() % variable) + '</%s>' % xmlColon)
-
-    def prettify(self, elem):
-        """Return a pretty-printed XML string for the Element.
-        """
-        reparsed = minidom.parseString(elem)
-        var = reparsed.toprettyxml(indent="\t")
-        print(var)
-        return var
-
     def createDefaultXml(self):
         with open(xmlFile, "w+") as fd:
             fd.write(
-                self.prettify(
-                    self.xmlConverter(properties,
-                                      self.xmlConverter(email, defaultEmail),
-                                      self.xmlConverter(password, defaulPassword),
-                                      self.xmlConverter(message, defaultMessage),
-                                      self.xmlConverter(subject, defaultSubject),
-                                      self.xmlConverter(list, defaultList),
-                                      self.xmlConverter(task, defaultTask),
-                                      self.xmlConverter(startPoint, defaultStartPoint),
-                                      self.xmlConverter(SSL, defaultSSL),
-                                      *[self.xmlConverter(smtp, itrSmtp) for itrSmtp in defaultSmtp]
-                                      )
+                prettify(
+                    xmlConverter(properties,
+                                 xmlConverter(email, defaultEmail),
+                                 xmlConverter(password, defaulPassword),
+                                 xmlConverter(message, defaultMessage),
+                                 xmlConverter(subject, defaultSubject),
+                                 xmlConverter(list, defaultList),
+                                 xmlConverter(task, defaultTask),
+                                 xmlConverter(startPoint, defaultStartPoint),
+                                 xmlConverter(SSL, defaultSSL),
+                                 *[xmlConverter(smtp, itrSmtp) for itrSmtp in defaultSmtp]
+                                 )
                 )
             )

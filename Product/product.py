@@ -3,15 +3,11 @@ import time
 import urllib.request
 import xmltodict
 import datetime
-from Crypto.PublicKey import RSA
-from Crypto.Cipher import PKCS1_OAEP as rsaCry
-import base64
-from Product.createsubscribtion import updateFile,saveXmlDataSource
+from Utils.cryption import *
+from Product.createsubscribtion import updateFile
+
 url = 'https://raw.githubusercontent.com/furkankykc/EmailAccounts/master/Product/'
 email = 'email'
-password = 'password'
-validationDate = 'validationDate'
-limit = 'limit'
 
 
 class Product():
@@ -40,7 +36,7 @@ class Product():
         print(baseUrl)
         with urllib.request.urlopen(baseUrl) as data:
             if secure:
-                return self.decrypt_message(data.read())
+                return decrypt_message(data.read())
             return (data.read())
 
     def updateLimit(self, limit):
@@ -54,15 +50,7 @@ class Product():
         return data.decode("utf8")[:-1].replace("\r","").split("\n")# todo burası \r\n olacak
 
 
-    def decrypt_message(self, encodedMessage):
-        print(encodedMessage)
-        # encodedMessage = encodedMessage('utf8')
-        with open('private.pem') as data:
-            privatekey = RSA.importKey(data.read())
-            privatekey = rsaCry.new(privatekey)
-        decoded_encrypted_msg = base64.b64decode(encodedMessage)
-        decoded_decrypted_msg = privatekey.decrypt(decoded_encrypted_msg)
-        return decoded_decrypted_msg
+
 
     def expDate(self,day):
         return (datetime.datetime.now() + datetime.timedelta(day)).timestamp()

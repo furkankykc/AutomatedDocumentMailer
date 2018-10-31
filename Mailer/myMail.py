@@ -5,7 +5,7 @@ from email.mime.base import MIMEBase
 from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from Mailer.Logger import Logger
+from Utils.Logger import Logger
 
 
 class Mail:

@@ -63,7 +63,7 @@ class ismeOzelDavetiye():
             self.email.drop(self.email.index[:startPoint.get()], inplace=True)
         self.email = self.email.tolist()
         # self.email = ['totobet100@houtlook.com','hasan_bayraktar@hotmail.com']
-        self.email = ['st-3-afyagk5c1@glockapps.com']
+        # self.email = ['st-3-afyagk5c1@glockapps.com']
         self.startPoint = startPoint
         self.mailYolla(progressbar, konu=konu, message=mesaj)
 
@@ -73,6 +73,7 @@ class ismeOzelDavetiye():
 
 
     def mailYolla(self, progressbar, konu="", message=""):
+        self.mailci.login(self.username[0], self.password)
         sentMails = 0
         if progressbar != None:
             progressbar["maximum"] = len(self.email)

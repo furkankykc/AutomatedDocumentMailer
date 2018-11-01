@@ -443,3 +443,14 @@
 2018-10-31 23:21:33.777677-->Sender:x-bet-co@x-news.online | Recipent:furkanfbr@gmail.com, DENY :{'furkanfbr@gmail.com': (554, b'5.7.1 <furkanfbr@gmail.com>: Relay access denied')}
 2018-10-31 23:25:09.716360-->Sender:info-xbet@x-news.online | Recipent:st-3-aednind0z@glockapps.com, DENY :{'st-3-aednind0z@glockapps.com': (554, b'5.7.1 <st-3-aednind0z@glockapps.com>: Relay access denied')}
 2018-10-31 23:26:04.684561-->Sender:info-xbet@x-news.online | Recipent:st-3-afyagk5c1@glockapps.com, DENY :{'st-3-afyagk5c1@glockapps.com': (554, b'5.7.1 <st-3-afyagk5c1@glockapps.com>: Relay access denied')}
+2018-11-01 07:33:43.521258-->Sender:info-xbet@x-news.online | Recipent:st-3-afyagk5c1@glockapps.com, DENY :{'st-3-afyagk5c1@glockapps.com': (554, b'5.7.1 <st-3-afyagk5c1@glockapps.com>: Relay access denied')}
+2018-11-01 07:35:25.704736-->Sender:info-xbet@x-news.online | Recipent:st-3-afyagk5c1@glockapps.com, DENY :{'st-3-afyagk5c1@glockapps.com': (554, b'5.7.1 <st-3-afyagk5c1@glockapps.com>: Relay access denied')}
+2018-11-01 07:35:56.791568-->Sender:info-xbet@x-news.online | Recipent:st-3-afyagk5c1@glockapps.com, DENY :{'st-3-afyagk5c1@glockapps.com': (554, b'5.7.1 <st-3-afyagk5c1@glockapps.com>: Relay access denied')}
+2018-11-01 07:37:33.216174-->Sender:info-xbet@x-news.online | Recipent:st-3-afyagk5c1@glockapps.com, DENY :{'st-3-afyagk5c1@glockapps.com': (554, b'5.7.1 <st-3-afyagk5c1@glockapps.com>: Relay access denied')}
+2018-11-01 07:42:39.974364-->Sender:info-xbet@x-news.online | Recipent:st-3-afyagk5c1@glockapps.com, DENY :{'st-3-afyagk5c1@glockapps.com': (554, b'5.7.1 <st-3-afyagk5c1@glockapps.com>: Relay access denied')}
+2018-11-01 08:02:06.441782-->Sender:info-xbet@x-news.online | Recipent:dr4mk@hotmail.com, OK
+2018-11-01 08:02:07.745700-->Sender:info-xbet@x-news.online | Recipent:furkan_1199_fbr@hotmail.com, OK
+2018-11-01 08:02:09.305621-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@hotmail.com, OK
+2018-11-01 08:02:41.905591-->Sender:info-xbet@x-news.online | Recipent:dr4mk@hotmail.com, OK
+2018-11-01 08:02:43.439274-->Sender:info-xbet@x-news.online | Recipent:furkan_1199_fbr@hotmail.com, OK
+2018-11-01 08:02:45.154035-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@hotmail.com, OK

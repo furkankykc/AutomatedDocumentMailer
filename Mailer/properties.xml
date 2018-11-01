@@ -5,11 +5,12 @@
 	<message>C:/Users/furkankykc/Downloads/index-email_1.html</message>
 	<subject>deneme</subject>
 	<list>C:/Users/furkankykc/Downloads/furkan.xlsx</list>
-	<start>0</start>
+	<start>3</start>
 	<task/>
 	<ssl>False</ssl>
 	<smtp>smtpout.europe.secureserver.net:465</smtp>
 	<smtp>smtp.gmail.com:587</smtp>
 	<smtp>smtp-mail.outlook.com:587</smtp>
 	<smtp>smtp.x-news.online:587</smtp>
+	<smtp>us2.smtp.mailhostbox.com</smtp>
 </properties>

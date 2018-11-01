@@ -431,3 +431,15 @@
 2018-10-31 00:23:29.853613-->Sender:xbet-informing@x-news.online | Recipent:ivannakanak777@gmail.com, OK
 2018-10-31 00:23:34.014083-->Sender:x-bet@x-news.online | Recipent:bohdan.stepanko4@gmail.com, OK
 2018-10-31 00:23:38.008862-->Sender:info-xbet@x-news.online | Recipent:hasan_bayraktaroglu@hotmail.com, OK
+2018-10-31 23:10:32.788112-->Sender:info-xbet@x-news.online | Recipent:dr4mk@hotmail.com, OK
+2018-10-31 23:10:36.168313-->Sender:news-x-bet@x-news.online | Recipent:furkan_1199_fbr@hotmail.com, OK
+2018-10-31 23:10:39.294442-->Sender:x-bet-co@x-news.online | Recipent:furkanfbr@hotmail.com, OK
+2018-10-31 23:11:14.477225-->Sender:info-xbet@x-news.online | Recipent:dr4mk@hotmail.com, OK
+2018-10-31 23:11:17.302012-->Sender:news-x-bet@x-news.online | Recipent:furkan_1199_fbr@hotmail.com, OK
+2018-10-31 23:11:20.211318-->Sender:x-bet-co@x-news.online | Recipent:furkanfbr@hotmail.com, OK
+2018-10-31 23:18:51.297568-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@gmail.com, DENY :{'furkanfbr@gmail.com': (554, b'5.7.1 <furkanfbr@gmail.com>: Relay access denied')}
+2018-10-31 23:20:31.785465-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@gmail.com, DENY :{'furkanfbr@gmail.com': (554, b'5.7.1 <furkanfbr@gmail.com>: Relay access denied')}
+2018-10-31 23:21:23.685608-->Sender:x-bet@x-news.online | Recipent:furkanfbr@gmail.com, DENY :{'furkanfbr@gmail.com': (554, b'5.7.1 <furkanfbr@gmail.com>: Relay access denied')}
+2018-10-31 23:21:33.777677-->Sender:x-bet-co@x-news.online | Recipent:furkanfbr@gmail.com, DENY :{'furkanfbr@gmail.com': (554, b'5.7.1 <furkanfbr@gmail.com>: Relay access denied')}
+2018-10-31 23:25:09.716360-->Sender:info-xbet@x-news.online | Recipent:st-3-aednind0z@glockapps.com, DENY :{'st-3-aednind0z@glockapps.com': (554, b'5.7.1 <st-3-aednind0z@glockapps.com>: Relay access denied')}
+2018-10-31 23:26:04.684561-->Sender:info-xbet@x-news.online | Recipent:st-3-afyagk5c1@glockapps.com, DENY :{'st-3-afyagk5c1@glockapps.com': (554, b'5.7.1 <st-3-afyagk5c1@glockapps.com>: Relay access denied')}

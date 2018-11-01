@@ -5,6 +5,7 @@ import xmltodict
 import datetime
 from Utils.cryption import *
 from Product.createsubscribtion import updateFile
+from Utils.xmlOperations import *
 
 url = 'https://raw.githubusercontent.com/furkankykc/EmailAccounts/master/Product/'
 email = 'email'
@@ -42,7 +43,7 @@ class Product():
     def updateLimit(self, limit):
         detailsPath = '/Product/' + self.name + '/details'
         commit = "Used {} emails".format(limit)
-        updateFile(detailsPath, commit, content=saveXmlDataSource(self.name,self.password,self.validationDate,int(self.mailLimitationValue)-limit))
+        updateFile(detailsPath, commit, content=upgradeLimits(self.name,self.password,self.validationDate,int(self.mailLimitationValue)-limit))
         print(commit)
     def getEmail(self):
         data= self.getCompanyDataFromUrl('emails',secure=False)

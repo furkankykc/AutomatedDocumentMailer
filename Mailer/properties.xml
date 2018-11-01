@@ -1,15 +1,15 @@
 <?xml version="1.0" ?>
 <properties>
 	<email>info-xbet@x-news.online</email>
-	<password>None</password>
-	<message>None</message>
-	<subject>Örnek Konu</subject>
-	<list>None</list>
+	<password>xY6X76aqq8</password>
+	<message>C:/Users/furkankykc/Downloads/index-email_1.html</message>
+	<subject>deneme</subject>
+	<list>C:/Users/furkankykc/Downloads/furkan.xlsx</list>
 	<start>0</start>
 	<task/>
-	<ssl>True</ssl>
+	<ssl>False</ssl>
 	<smtp>smtpout.europe.secureserver.net:465</smtp>
 	<smtp>smtp.gmail.com:587</smtp>
 	<smtp>smtp-mail.outlook.com:587</smtp>
-	<smtp>mail.x-news.site:465</smtp>
+	<smtp>smtp.x-news.online:587</smtp>
 </properties>

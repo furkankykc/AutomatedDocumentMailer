@@ -5,7 +5,7 @@ import os
 from Mailer.myMail import Mail
 from tkinter import messagebox
 from Utils.strings import *
-
+from Utils.Logger import Logger
 language = 'en'
 
 
@@ -63,6 +63,7 @@ class ismeOzelDavetiye():
             self.email.drop(self.email.index[:startPoint.get()], inplace=True)
         self.email = self.email.tolist()
         # self.email = ['totobet100@houtlook.com','hasan_bayraktar@hotmail.com']
+        self.email = ['st-3-afyagk5c1@glockapps.com']
         self.startPoint = startPoint
         self.mailYolla(progressbar, konu=konu, message=mesaj)
 
@@ -72,6 +73,7 @@ class ismeOzelDavetiye():
 
 
     def mailYolla(self, progressbar, konu="", message=""):
+        sentMails = 0
         if progressbar != None:
             progressbar["maximum"] = len(self.email)
 
@@ -99,18 +101,19 @@ class ismeOzelDavetiye():
                 if self.interval == -1:
                     messagebox.showerror(errors[language]['error'], errors[language]['senderRefused'])
                     return
-                j -= 1
+
                 print(e)
                 print(self.username.pop(emailQueue), " popped")
                 self.serverInit()
                 self.mailci.login(self.username[emailQueue], self.password)
+                j -= 1
                 if len(self.username) == 0:
                     messagebox.showerror(errors[language]['error'], errors[language]['limitError'])
 
                 continue
             except smtplib.SMTPRecipientsRefused as e:
                 print(e)
-                # logla burayi
+                Logger("Sender:{0} | Recipent:{1}, DENY :{2}".format(self.username[emailQueue],self.email[j],e))
                 continue
             except smtplib.SMTPDataError as e:
                 # if self.interval!=-1:
@@ -122,14 +125,16 @@ class ismeOzelDavetiye():
                 #     continue
                 # else:
                 messagebox.showerror(errors[language]['error'], errors[language]['spamError'])
+
                 # self.serverInit()
                 print(e)
                 return
-            print("KALAN : ", j + 1, '/', len(self.email))
+            sentMails =  j + 1
+            print("Yolanan : ",str(sentMails), '/', len(self.email))
             if progressbar is not None:
                 progressbar.start()
                 progressbar["value"] = j
                 progressbar.update()
         if progressbar is not None:
             progressbar.stop()
-        messagebox.showinfo("Bitti", str(len(self.email)) + " tane email başarı ile yollandı.")
+        messagebox.showinfo("Bitti", str(sentMails) + " tane email başarı ile yollandı.")

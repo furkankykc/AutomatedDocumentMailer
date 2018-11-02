@@ -36,7 +36,7 @@ class Mail:
                 self.server.ehlo()
             else:
                 self.server = smtplib.SMTP(self.smtp)
-                self.server.set_debuglevel(1)
+                # self.server.set_debuglevel(1)
                 self.server.ehlo()
                 self.server.starttls()
         except smtplib.SMTPConnectError as e:
@@ -44,7 +44,7 @@ class Mail:
 
     def login(self, username, password):
         try:
-            self.server.set_debuglevel(1)
+            # self.server.set_debuglevel(1)
             self.server.login(username, password)
             self.who = username
             print(username, " login olundu")
@@ -55,7 +55,7 @@ class Mail:
         self.server.close()
 
     def send(self, recipent, filename='', subject="", message=""):
-        self.server.set_debuglevel(1)
+        # self.server.set_debuglevel(1)
         outer = MIMEMultipart()
         outer['From'] = '<Xnews:'+self.who+'>'
         outer['To'] = recipent

@@ -6,16 +6,15 @@ from Mailer.myMail import Mail
 from tkinter import messagebox
 from Utils.strings import *
 from Utils.Logger import Logger
+
 language = 'en'
 
 
 class ismeOzelDavetiye():
     globals()
 
-
     check = []
     ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-
 
     def __init__(self, taslak, liste, username, password, konu, mesaj, dosyaIsmi, smtp, progressbar, interval=-1,
                  startPoint=0, ssl=False):
@@ -46,6 +45,7 @@ class ismeOzelDavetiye():
         try:
             self.refrence = pandas.read_excel(liste, encoding="utf8")
             self.email = self.refrence['EMAİL']
+            print(self.email)
         except FileNotFoundError:
             messagebox.showerror(errors[language]['error'], errors[language]['listError'])
             raise FileNotFoundError
@@ -55,22 +55,21 @@ class ismeOzelDavetiye():
         try:
             if startPoint.get() >= 0 and startPoint.get() != None:
                 if startPoint.get() >= len(self.email):
+                    print(len(self.email))
                     messagebox.showerror(errors[language]['error'], errors[language]['startError'])
                     return
 
         except:
             startPoint.set(0)
-            self.email.drop(self.email.index[:startPoint.get()], inplace=True)
+        self.email.drop(self.email.index[:startPoint.get()], inplace=True)
         self.email = self.email.tolist()
         # self.email = ['totobet100@houtlook.com','hasan_bayraktar@hotmail.com']
-        # self.email = ['st-3-afyagk5c1@glockapps.com']
+        # self.email = ['furkanfbr@hotmail.com']
         self.startPoint = startPoint
         self.mailYolla(progressbar, konu=konu, message=mesaj)
 
-
     def serverInit(self):
         self.mailci = Mail(self.username[0], self.password, self.username[0], smtp=self.smtp, ssl=self.ssl)
-
 
     def mailYolla(self, progressbar, konu="", message=""):
         self.mailci.login(self.username[0], self.password)
@@ -96,6 +95,7 @@ class ismeOzelDavetiye():
                 print(self.password)
                 messagebox.showerror(errors[language]['error'], errors[language]['authError'])
                 return
+
             except smtplib.SMTPConnectError:
                 messagebox.showerror(errors[language]['error'], errors[language]['smtpError'])
             except smtplib.SMTPSenderRefused as e:
@@ -113,8 +113,19 @@ class ismeOzelDavetiye():
 
                 continue
             except smtplib.SMTPRecipientsRefused as e:
-                print(e)
-                Logger("Sender:{0} | Recipent:{1}, DENY :{2}".format(self.username[emailQueue],self.email[j],e))
+                # for key in e.args[0]:
+                #     print(key,e.args[0][key])
+                errorDict  =e.args[0]
+                keylist = []
+                keylist.extend(iter(errorDict.keys()))
+                error_code = errorDict[keylist[0]][1]
+                print(error_code)
+                Logger("Sender:{0} | Recipent:{1}, DENY :{2}".format(self.username[emailQueue], self.email[j], e))
+                # if error_code == 550:
+                #     continue
+                if self.interval == -1:
+                    messagebox.showerror(errors[language]['error'], errors[language]['limitError'])
+                    return
                 continue
             except smtplib.SMTPDataError as e:
                 # if self.interval!=-1:
@@ -130,8 +141,8 @@ class ismeOzelDavetiye():
                 # self.serverInit()
                 print(e)
                 return
-            sentMails =  j + 1
-            print("Yolanan : ",str(sentMails), '/', len(self.email))
+            sentMails = j + 1
+            print("Yolanan : ", str(sentMails), '/', len(self.email))
             if progressbar is not None:
                 progressbar.start()
                 progressbar["value"] = j

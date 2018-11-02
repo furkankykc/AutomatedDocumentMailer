@@ -4,7 +4,7 @@ import urllib.request
 import xmltodict
 import datetime
 from Utils.cryption import *
-from Product.createsubscribtion import updateFile
+from Utils.github import updateFile
 from Utils.xmlOperations import *
 
 url = 'https://raw.githubusercontent.com/furkankykc/EmailAccounts/master/Product/'

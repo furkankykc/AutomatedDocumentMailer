@@ -43,3 +43,4 @@ def expDate(day):
 # subscribtion("xbet", "8989", subType["special"])
 # print(subType["gold"][0])
 # updateEmails("xbet",["x-bet@x-news.site",'x-bet-co@x-news.site'])
+# subscribtion("hilbet", "123@Marketing", subType["special"])

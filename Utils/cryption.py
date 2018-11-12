@@ -61,7 +61,7 @@ def encrypt_message(message):
 
     # with open('private.pem') as data:
     #     privatekey = RSA.importKey(data.read())
-    privatekey = RSA.import_key(privatePEM)
+    privatekey = RSA.importKey(privatePEM)
     encrypted_msg = rsaCry.new(privatekey.publickey()).encrypt(message)
     encoded_encrypted_msg = base64.b64encode(encrypted_msg)  # base64 encoded strings are database friendly
     return encoded_encrypted_msg

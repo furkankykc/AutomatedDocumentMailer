@@ -6,6 +6,7 @@ from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from Utils.Logger import Logger
+from email.utils import formatdate
 
 
 class Mail:
@@ -20,8 +21,8 @@ class Mail:
             # ['Content-Location', 'tr-Turkey'],
             ['Content-Language', 'tr-Tr'],
             # ['Accept-Language', 'tr-Tr'],
-            ['From', 'Xnews'],
-            ["X-Priority","1 (High)"],
+            ['Date', formatdate()],
+            # ["X-Priority","1 (High)"],
             ['Reply-To','Gaming Bulten<bulten@hilbet.com>']
 
         ]
@@ -36,7 +37,7 @@ class Mail:
                 self.server.ehlo()
             else:
                 self.server = smtplib.SMTP(self.smtp)
-                # self.server.set_debuglevel(1)
+                self.server.set_debuglevel(1)
                 self.server.ehlo()
                 self.server.starttls()
         except smtplib.SMTPConnectError as e:
@@ -57,10 +58,11 @@ class Mail:
     def send(self, recipent, filename='', subject="", message=""):
         # self.server.set_debuglevel(1)
         outer = MIMEMultipart()
-        outer['From'] = '<Xnews:'+self.who+'>'
+        outer['From'] = '<'+self.who+'>'
         outer['To'] = recipent
         outer['Subject'] = subject
         outer.attach(MIMEText(message, 'html'))
+        outer.attach(MIMEText(subject+'\n'+self.who, 'text/plain'))
         print(self.who)
         for header in self.headers:
             outer.add_header(*header)

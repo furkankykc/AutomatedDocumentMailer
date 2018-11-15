@@ -17,13 +17,13 @@ class Mail:
         self.smtp = smtp
         self.headers = [
             # ['Precedence', 'bulk'],
-            ['List-Unsubscribe', 'http://x-news.online/unsubscribe'],
+            # ['List-Unsubscribe', ''],
             # ['Content-Location', 'tr-Turkey'],
             ['Content-Language', 'tr-Tr'],
             # ['Accept-Language', 'tr-Tr'],
             ['Date', formatdate()],
             # ["X-Priority","1 (High)"],
-            ['Reply-To','Gaming Bulten<bulten@hilbet.com>']
+            #['Reply-To','Gaming Bulten<bulten@hilbet.com>']
 
         ]
         self.serverInit()

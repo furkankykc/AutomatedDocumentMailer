@@ -64,7 +64,7 @@ class ismeOzelDavetiye():
         self.email.drop(self.email.index[:startPoint.get()], inplace=True)
         self.email = self.email.tolist()
         # self.email = ['totobet100@houtlook.com','hasan_bayraktar@hotmail.com']
-        self.email = ['furkanfbr@gmail.com']*100
+        # self.email = ['furkanfbr@gmail.com']*100
 
         # self.email = ['test-2wq0k@mail-tester.com','furkanfbr@gmail.com']
         self.startPoint = startPoint
@@ -127,7 +127,7 @@ class ismeOzelDavetiye():
             except smtplib.SMTPRecipientsRefused as e:
                 # for key in e.args[0]:
                 #     print(key,e.args[0][key])
-                errorDict  =e.args[0]
+                errorDict = e.args[0]
                 keylist = []
                 keylist.extend(iter(errorDict.keys()))
                 error_code = errorDict[keylist[0]][1]

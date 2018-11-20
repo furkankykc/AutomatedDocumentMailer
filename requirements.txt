@@ -5,3 +5,4 @@ xlwt
 openpyxl
 xmltodict
 PyGithub
+nspython

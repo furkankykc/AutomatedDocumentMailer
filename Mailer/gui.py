@@ -1,7 +1,7 @@
 import urllib.request
 from tkinter.filedialog import askopenfile
 import xmltodict
-
+from Mailer.mailTester import MailVertifyer
 from Mailer.document import ismeOzelDavetiye
 from tkinter import *
 from tkinter import ttk
@@ -124,6 +124,7 @@ class Gui():
             try:
 
                 self.startText.configure(state='disabled')
+                self.MailCheckButton.configure(state='disabled')
                 subLimit = self.startPoint.get()
                 if int(self.startPoint.get()) < 0:
                     self.startPoint.set(0)
@@ -138,6 +139,7 @@ class Gui():
                 self.startText.configure(state='normal')
                 self.sendButton.configure(state='normal')
 
+                self.MailCheckButton.configure(state='normal')
             except Exception as e:
                 print(e)
 
@@ -153,12 +155,12 @@ class Gui():
             self.sendButton.configure(state='normal')
 
     def prepareLabels(self):
-        self.emailLabel = Label(self.root, text="E-mail").grid(row=0)
-        self.passLabel = Label(self.root, text="Password").grid(row=1)
-        self.subLabel = Label(self.root, text="Subject").grid(row=2)
-        self.messageLabel = Label(self.root, text="Message").grid(row=3)
-        self.listLabel = Label(self.root, text="List").grid(row=4)
-        self.startLabel = Label(self.root, text="Start of List").grid(row=5)
+        self.emailLabel = Label(self.root, text="E-mail").grid(row=0, sticky=W)
+        self.passLabel = Label(self.root, text="Password").grid(row=1, sticky=W)
+        self.subLabel = Label(self.root, text="Subject").grid(row=2, sticky=W)
+        self.messageLabel = Label(self.root, text="Message").grid(row=3, sticky=W)
+        self.listLabel = Label(self.root, text="List").grid(row=4, sticky=W)
+        self.startLabel = Label(self.root, text="Start of List").grid(row=5, sticky=W)
         # self.taskLabel = Label(self.root, text="Taslak").grid(row=5)
 
     def prepareTextBoxs(self):
@@ -193,14 +195,14 @@ class Gui():
         # self.taskTextBox = Entry(self.root, textvariable=self.taskText)
         self.mailVar.set(100)
         self.passwordTextBox.configure(show='*')
-        self.passwordTextBox.grid(row=1, column=1)
-        self.subjectTextBox.grid(row=2, column=1)
-        self.messageSelect.grid(row=3, column=1)
-        self.listSelect.grid(row=4, column=1)
-        self.checkBox.grid(row=8, column=0)
-        self.mailInterval.grid(row=8, column=1)
-        self.startText.grid(row=5, column=1)
-        self.sslButton.grid(row=9, column=0)
+        self.passwordTextBox.grid(row=1, column=1, sticky=W + E + N + S)
+        self.subjectTextBox.grid(row=2, column=1, sticky=W + E + N + S)
+        self.messageSelect.grid(row=3, column=1, sticky=W + E + N + S)
+        self.listSelect.grid(row=4, column=1, sticky=W + E + N + S)
+        self.checkBox.grid(row=8, column=0, sticky=W)
+        self.mailInterval.grid(row=8, column=1, sticky=W + E + N + S)
+        self.startText.grid(row=5, column=1, sticky=W + E + N + S)
+        self.sslButton.grid(row=9, column=0, sticky=W + E + N + S)
         # self.taskTextBox.grid(row=5, column=1)
 
     def prepareProgressBar(self):
@@ -212,8 +214,8 @@ class Gui():
     def prepareMenu(self):
         self.emailMenu = OptionMenu(self.root, self.emailText, *self.email)
         self.smtpMenu = OptionMenu(self.root, self.smtpValue, *self.smtp)
-        self.emailMenu.grid(row=0, column=1)
-        self.smtpMenu.grid(row=6, column=1)
+        self.emailMenu.grid(row=0, column=1, sticky=W + E + N + S)
+        self.smtpMenu.grid(row=6, column=1, sticky=W + E + N + S)
 
     def prepareButtons(self):
         self.listSelect.bind("<Double-1>", self.OnDoubleClick)
@@ -222,7 +224,16 @@ class Gui():
         # Button(self.root, text='Liste Seç', command=self.browse_list).grid(row=1, column=3, sticky=W, pady=4)
         # Button(self.root, text='Taslak Seç', command=self.browse_list_task).grid(row=5, column=2, sticky=W, pady=4)
         self.sendButton = Button(self.root, text='Send', command=self.send)
-        self.sendButton.grid(row=9, column=3, sticky=W, pady=4)
+        self.sendButton.grid(row=9, column=3, sticky=W + E + N + S, pady=4,padx=4)
+        self.MailCheckButton = Button(self.root, text='Check', command=self.vertifyMails)
+        self.MailCheckButton.grid(row=4, column=3, sticky=W + E + N + S, padx=4,pady=4)
+
+    def vertifyMails(self):
+        list = self.listFileLocation
+        try:
+            messagebox.showinfo("Removed", MailVertifyer(list).getInfo())
+        except Exception as e:
+            messagebox.showerror("Error", e)
 
     def updateMailInterval(self):
         if self.checkVar.get():

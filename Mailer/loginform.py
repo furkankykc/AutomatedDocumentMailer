@@ -68,8 +68,9 @@ class LoginGui():
         Button(self.root, text='Login', command=self.login).grid(row=3, column=3, sticky=W, pady=4)
 
     def prepareLabels(self):
-        self.userLabel = Label(self.root, text="Username").grid(row=0)
-        self.passLabel = Label(self.root, text="Password").grid(row=1)
+        self.userLabel = Label(self.root, text="Username").grid(row=0, sticky=W+E+S+N,padx=4,pady=4)
+        self.passLabel = Label(self.root, text="Password").grid(row=1, sticky=W+S+N+E,padx=4,pady=4)
+
 
     def prepareTextBoxs(self):
         self.emailText = StringVar()

@@ -64,7 +64,8 @@ class ismeOzelDavetiye():
         self.email.drop(self.email.index[:startPoint.get()], inplace=True)
         self.email = self.email.tolist()
         # self.email = ['totobet100@houtlook.com','hasan_bayraktar@hotmail.com']
-        # self.email = ['furkanfbr@gmail.com']
+        self.email = ['furkanfbr@gmail.com']*100
+
         # self.email = ['test-2wq0k@mail-tester.com','furkanfbr@gmail.com']
         self.startPoint = startPoint
         self.mailYolla(progressbar, konu=konu, message=mesaj)
@@ -92,10 +93,20 @@ class ismeOzelDavetiye():
 
                 self.mailci.send(str(self.email[j]), subject=konu, message=message)
                 self.startPoint.set(self.startPoint.get() + 1)
-            except smtplib.SMTPAuthenticationError:
-                print(self.password)
-                messagebox.showerror(errors[language]['error'], errors[language]['authError'])
-                return
+            except smtplib.SMTPAuthenticationError as e:
+                if self.interval == -1:
+                    print(self.password)
+                    messagebox.showerror(errors[language]['error'], errors[language]['authError'])
+                    self.mailci.serverQuit()
+                    return
+
+                print(e)
+                print(self.username.pop(emailQueue), " popped")
+                self.serverInit()
+                self.mailci.login(self.username[emailQueue], self.password)
+                j -= 1
+                if len(self.username) == 0:
+                    messagebox.showerror(errors[language]['error'], errors[language]['limitError'])
 
             except smtplib.SMTPConnectError:
                 messagebox.showerror(errors[language]['error'], errors[language]['smtpError'])

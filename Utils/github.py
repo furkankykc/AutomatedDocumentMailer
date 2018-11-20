@@ -2,7 +2,7 @@ import datetime
 
 from github import Github
 def getGitRepo():
-    g = Github("furkankykc", "8989323846q")
+    g = Github("12bf9f12d5d0d500ad7f691c1ffced13f75e2e94")
     return g.get_user().get_repo('EmailAccounts')
 
 

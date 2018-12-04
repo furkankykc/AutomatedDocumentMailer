@@ -62,7 +62,7 @@ class Mail:
         outer['To'] = recipent
         outer['Subject'] = subject
         outer.attach(MIMEText(message, 'html'))
-        outer.attach(MIMEText(subject+'\n'+self.who, 'text/plain'))
+
         print(self.who)
         for header in self.headers:
             outer.add_header(*header)

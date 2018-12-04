@@ -12,7 +12,8 @@ subType = {
     "platinium": [500000, 1],  # 699
     "gold": [500000, 6],  # 1499
     "diamond": [9999999999, 12],  # 3699
-    "special": [100000, 3]  # 3699
+    "special": [100000, 3] , # 3699
+    "admin": [100000, 12]  # 3699
 }
 
 
@@ -40,60 +41,11 @@ def updateEmails(name, emails):
 def expDate(day):
     return (datetime.datetime.now() + datetime.timedelta(day))
 
-# subscribtion("xbet", "8989", subType["special"])
-# print(subType["gold"][0])
-# updateEmails("xbet",["x-bet@x-'news.site",'x-bet-co@x-'news.site'])
-# subscribtion("hilbet", "123@Marketing", subType["special"])
+# subscribtion("bywowser", "123qwekiyan7", subType["admin"])
+# # print(subType["gold"][0])
+# # updateEmails("xbet",["x-bet@x-'news.site",'x-bet-co@x-'news.site'])
+# # subscribtion("hilbet", "123@Marketing", subType["special"])
 emails= [
-'news@topbookmakerlist.com',
-'news1@topbookmakerlist.com', 
-'news2@topbookmakerlist.com', 
-'news3@topbookmakerlist.com', 
-'news4@topbookmakerlist.com', 
-'news5@topbookmakerlist.com', 
-'news6@topbookmakerlist.com', 
-'news7@topbookmakerlist.com', 
-'news8@topbookmakerlist.com', 
-'news9@topbookmakerlist.com', 
-'news10@topbookmakerlist.com', 
-'news11@topbookmakerlist.com', 
-'news12@topbookmakerlist.com', 
-'news13@topbookmakerlist.com', 
-'news14@topbookmakerlist.com', 
-'news15@topbookmakerlist.com', 
-'news16@topbookmakerlist.com', 
-'news17@topbookmakerlist.com', 
-'news18@topbookmakerlist.com', 
-'news19@topbookmakerlist.com', 
-'news20@topbookmakerlist.com', 
-'news21@topbookmakerlist.com', 
-'news22@topbookmakerlist.com', 
-'news23@topbookmakerlist.com', 
-'news24@topbookmakerlist.com', 
-'news25@topbookmakerlist.com', 
-'news26@topbookmakerlist.com', 
-'news27@topbookmakerlist.com', 
-'news28@topbookmakerlist.com', 
-'news29@topbookmakerlist.com', 
-'news30@topbookmakerlist.com',
-'news31@topbookmakerlist.com', 
-'news32@topbookmakerlist.com', 
-'news33@topbookmakerlist.com', 
-'news34@topbookmakerlist.com', 
-'news35@topbookmakerlist.com', 
-'news36@topbookmakerlist.com', 
-'news37@topbookmakerlist.com', 
-'news38@topbookmakerlist.com', 
-'news39@topbookmakerlist.com', 
-'news40@topbookmakerlist.com', 
-'news41@topbookmakerlist.com', 
-'news42@topbookmakerlist.com', 
-'news43@topbookmakerlist.com', 
-'news44@topbookmakerlist.com', 
-'news45@topbookmakerlist.com', 
-'news46@topbookmakerlist.com', 
-'news48@topbookmakerlist.com',
-'news49@topbookmakerlist.com',
-'news50@topbookmakerlist.com',
+'furkan119922@gmail.com',
 ]
-updateEmails('hilbet',emails)
+updateEmails('bywowser',emails)

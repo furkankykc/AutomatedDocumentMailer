@@ -59,9 +59,9 @@ def vertify(address):
             return False
     # MX record lookup
     return False
-
-# print(vertify("ğğ@dsgsdg.com"))
-list = MailVertifyer("/home/furkankykc/Desktop/Mailing/test.xlsx").list()
-for i in list:
-    print(i)
+#
+# # print(vertify("ğğ@dsgsdg.com"))
+# list = MailVertifyer("/home/furkankykc/Desktop/Mailing/test.xlsx").list()
+# for i in list:
+#     print(i)
 

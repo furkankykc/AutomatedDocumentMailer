@@ -21,6 +21,7 @@ class MailVertifyer:
         for mail in self.orjList:
             if vertify(mail):
                 self.new.append(mail)
+                print(mail)
 
         pd.DataFrame(self.new, columns=["EMAİL"]).to_excel(list,index=False)
 
@@ -59,9 +60,3 @@ def vertify(address):
             return False
     # MX record lookup
     return False
-#
-# # print(vertify("ğğ@dsgsdg.com"))
-# list = MailVertifyer("/home/furkankykc/Desktop/Mailing/test.xlsx").list()
-# for i in list:
-#     print(i)
-

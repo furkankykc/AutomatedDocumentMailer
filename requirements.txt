@@ -6,3 +6,4 @@ openpyxl
 xmltodict
 PyGithub
 nspython
+entrypoint2

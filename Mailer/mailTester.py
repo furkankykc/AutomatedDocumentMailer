@@ -28,7 +28,7 @@ class MailVertifyer:
 
 
     def getInfo(self):
-        return "Value of Broken Mails \nRemoved : {}".format(str(len(self.orjList)-len(self.new)))
+        return "Value of Broken Mails \nRemoved : {} From:{} address".format(str(len(self.orjList)-len(self.new)),str(len(self.orjList)))
 
     def list(self):
         return self.new
@@ -60,3 +60,6 @@ def vertify(address):
             return False
     # MX record lookup
     return False
+
+
+

@@ -46,4 +46,5 @@ if __name__ == '__main__':
             confs = readConfs()
     print("Usage: %s -i input -o output" % sys.argv)
     # Display input and output file name passed as the args
-    # send(confs)
+    send(confs)
+# python3 commandline.py -e bonus@wikybet.com -d wikybet/wikybet.html -l wikybet/wiky2.xlsx -b Wikybet\ Geliyor!!! -f mail.wikybetbonus.com:587 -i 0 -ssl False -t s

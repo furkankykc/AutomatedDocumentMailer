@@ -6,7 +6,7 @@ from Mailer.myMail import Mail
 from tkinter import messagebox
 from Utils.strings import *
 from Utils.Logger import Logger
-
+from Utils.reading import seperatedListSummoner
 language = 'en'
 
 
@@ -68,7 +68,8 @@ class ismeOzelDavetiye():
 
         # self.email = ['test-2wq0k@mail-tester.com','furkanfbr@gmail.com']
         self.startPoint = startPoint
-        self.mailYolla(progressbar, konu=konu, message=mesaj)
+        self.sendSeperatedMails(progressbar,konu,mesaj)
+        # self.mailYolla(progressbar, konu=konu, message=mesaj)
 
     def serverInit(self):
         self.mailci = Mail(self.username[0], self.password, self.username[0], smtp=self.smtp, ssl=self.ssl)
@@ -159,6 +160,22 @@ class ismeOzelDavetiye():
                 progressbar.start()
                 progressbar["value"] = j
                 progressbar.update()
+
         if progressbar is not None:
             progressbar.stop()
         messagebox.showinfo("Bitti", str(sentMails) + " tane email başarı ile yollandı.")
+
+
+
+    def sendSeperatedMails(self,progressbar,konu,mesaj):
+        refrence = pandas.read_excel(self.liste, encoding="utf8")
+        try:
+            email = refrence['EMAİL']
+        except KeyError:
+        # messagebox.showerror(errors[language]['error'], errors[language]['keyError'])
+            raise KeyError
+        self.email  = email.tolist()
+        self.mailYolla(progressbar, konu=konu, message=mesaj)
+        self.liste = seperatedListSummoner(self.liste)
+        if(self.liste is not None):
+            self.sendSeperatedMails(progressbar,konu,mesaj)

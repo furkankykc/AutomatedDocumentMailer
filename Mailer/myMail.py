@@ -37,7 +37,7 @@ class Mail:
                 self.server.ehlo()
             else:
                 self.server = smtplib.SMTP(self.smtp)
-                self.server.set_debuglevel(1)
+                #self.server.set_debuglevel(1)
                 self.server.ehlo()
                 self.server.starttls()
         except smtplib.SMTPConnectError as e:

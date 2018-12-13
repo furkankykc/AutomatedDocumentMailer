@@ -1,3 +1,4 @@
+
 from github import Github
 import datetime
 from Utils.xmlOperations import *
@@ -11,7 +12,7 @@ subType = {
     "silver": [100000, 1],  # 289
     "platinium": [500000, 1],  # 699
     "gold": [500000, 6],  # 1499
-    "diamond": [9999999999, 12],  # 3699
+    "diamond": [9999999999, 1],  # 3699
     "special": [100000, 3] , # 3699
     "admin": [100000, 12]  # 3699
 }
@@ -41,11 +42,12 @@ def updateEmails(name, emails):
 def expDate(day):
     return (datetime.datetime.now() + datetime.timedelta(day))
 
-# subscribtion("bywowser", "123qwekiyan7", subType["admin"])
+#subscribtion("wikybet", "wikybet8989", subType["diamond"])
 # # print(subType["gold"][0])
 # # updateEmails("xbet",["x-bet@x-'news.site",'x-bet-co@x-'news.site'])
 # # subscribtion("hilbet", "123@Marketing", subType["special"])
 emails= [
-'furkan119922@gmail.com',
+'root@x-news.online',
+'bonus@x-news.online',
 ]
-updateEmails('bywowser',emails)
+updateEmails('xbet',emails)

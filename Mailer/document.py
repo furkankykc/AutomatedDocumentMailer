@@ -45,6 +45,7 @@ class ismeOzelDavetiye():
         try:
             self.refrence = pandas.read_excel(liste, encoding="utf8")
             self.email = self.refrence['EMAİL']
+            # self.ad = self.refrence['AD']
             print(self.email)
         except FileNotFoundError:
             messagebox.showerror(errors[language]['error'], errors[language]['listError'])
@@ -52,17 +53,20 @@ class ismeOzelDavetiye():
         except KeyError:
             messagebox.showerror(errors[language]['error'], errors[language]['keyError'])
             raise KeyError
+        start =0
         try:
             if startPoint.get() >= 0 and startPoint.get() != None:
+                start = startPoint.get()
                 if startPoint.get() >= len(self.email):
                     print(len(self.email))
                     messagebox.showerror(errors[language]['error'], errors[language]['startError'])
                     return
 
         except:
-            startPoint.set(0)
-        self.email.drop(self.email.index[:startPoint.get()], inplace=True)
+            start = startPoint
+        self.email.drop(self.email.index[:start], inplace=True)
         self.email = self.email.tolist()
+        # self.ad = self.ad.tolist()
         # self.email = ['totobet100@houtlook.com','hasan_bayraktar@hotmail.com']
         # self.email = ['furkanfbr@gmail.com']*100
 
@@ -91,9 +95,17 @@ class ismeOzelDavetiye():
                         self.mailci.serverQuit()
                         self.serverInit()
                         self.mailci.login(self.username[emailQueue], self.password)
+                try:
+                    ad=str(self.ad[j])
+                except:
+                    ad =""
 
                 self.mailci.send(str(self.email[j]), subject=konu, message=message)
-                self.startPoint.set(self.startPoint.get() + 1)
+                # self.mailci.send(str(self.email[j]), subject="Merhaba"+ad+" "+konu, message=message)
+                try:
+                    self.startPoint.set(self.startPoint.get() + 1)
+                except:
+                    continue
             except smtplib.SMTPAuthenticationError as e:
                 if self.interval == -1:
                     print(self.password)

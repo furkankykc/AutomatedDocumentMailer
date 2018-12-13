@@ -1,14 +1,16 @@
+import ast
 import sys
 import sys, getopt
 import configparser
 from Mailer.document import ismeOzelDavetiye
 
+encoding = ['utf-8', 'iso-8859-9']
 
 def readConfs():
     try:
-        ssl = ConfigSectionMap("Config")['ssl']
+        ssl = ast.literal_eval(ConfigSectionMap("Config")['ssl'])
         smtp = ConfigSectionMap("Config")['smtp']
-        start = ConfigSectionMap("Message")['start']
+        start = int(ConfigSectionMap("Message")['start'])
         email = ConfigSectionMap("Auth")['email']
         password = ConfigSectionMap("Auth")['password']
         subject = ConfigSectionMap("Message")['subject']
@@ -20,7 +22,9 @@ def readConfs():
 
 
 def send(confs):
-    ismeOzelDavetiye("",str(confs['list']), confs['email'], str(confs['password']), str(['subject']),
+    with open(confs['message'], 'r', encoding=encoding[0]) as fd:
+        confs['message'] = fd.read()
+    ismeOzelDavetiye("",str(confs['list']), [confs['email']], str(confs['password']), str(confs['subject']),
                      confs['message'], "",
                      confs['smtp'],
                      None,
@@ -41,9 +45,9 @@ def createDefault():
     confs['email'] = "example@domain.com"
     confs['subject'] = "Example"
     confs['message'] = "message.html"
-    confs['smtp'] = "mail.example.domain.com"
+    confs['smtp'] = "mail.domain.com:587"
     confs['start'] = "0"
-    confs['ssl'] = "No"
+    confs['ssl'] = "False"
     createConfig(confs)
 
 def createConfig(confs):

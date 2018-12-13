@@ -23,7 +23,8 @@ class MailVertifyer:
                 self.new.append(mail)
                 print(mail)
 
-        pd.DataFrame(self.new, columns=["EMAİL"]).to_excel(list,index=False)
+        refrence['EMAİL']=self.new
+        pd.DataFrame(refrence).to_excel(list,index=False)
 
 
 
@@ -60,6 +61,39 @@ def vertify(address):
             return False
     # MX record lookup
     return False
+def fixEncodingList(list):
+    refrence = pd.read_excel(list, encoding='utf-8')
+    soyad = refrence['SOYAD'].tolist()
+    ad = refrence['AD'].tolist()
+    for i in range(len(ad)):
+        try:
+            ad[i]=fixStr(ad[i].encode("utf8"))
+            soyad[i]=fixStr(soyad[i].encode("utf8"))
+        except:
+            continue
+    refrence['AD'] = ad
+    refrence['SOYAD']= soyad
+    pd.DataFrame(refrence).to_excel(list, index=False)
+
+
+def fixStr(string):
+    name = ""
+    try:
+        name=string.decode('utf-8-sig').encode('latin1').decode('utf8')
+        print(string ,":",name)
+    except:
+        return name
+    return(name.title())
 
 
 
+list = "/home/furkankykc/Downloads/new.xlsx"
+# ad =['furkan','fatih']
+# soyad =['kıyıkcı','kıyıkcı']
+# email =['test@gmail.com','test']
+# ref =pd.DataFrame()
+# ref['AD']=ad
+# ref['SOYAD']= soyad
+# ref['EMAİL']=email
+# pd.DataFrame(ref).to_excel(list, index=False)
+# fixEncodingList(list)

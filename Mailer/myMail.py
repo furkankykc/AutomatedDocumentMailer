@@ -16,14 +16,16 @@ class Mail:
         self.ssl = ssl
         self.smtp = smtp
         self.headers = [
-            # ['Precedence', 'bulk'],
+            ['Precedence', 'bulk'],
             # ['List-Unsubscribe', ''],
-            # ['Content-Location', 'tr-Turkey'],
+            ['List-Unsubscribe', '<mailto:{}>'],
+            ['Content-Location', 'tr-Turkey'],
             ['Content-Language', 'tr-Tr'],
-            # ['Accept-Language', 'tr-Tr'],
+            ['Accept-Language', 'tr-Tr'],
             ['Date', formatdate()],
             # ["X-Priority","1 (High)"],
-            #['Reply-To','Gaming Bulten<bulten@hilbet.com>']
+
+            ['Reply-To', 'Destek<{}>']
 
         ]
         self.serverInit()
@@ -46,27 +48,47 @@ class Mail:
     def login(self, username, password):
         try:
             # self.server.set_debuglevel(1)
+            print(username," ",password)
             self.server.login(username, password)
             self.who = username
+            self.setHeaders()
             print(username, " login olundu")
         except smtplib.SMTPAuthenticationError as e:
             raise e
 
     def serverQuit(self):
         self.server.close()
+    def setHeaders(self):
+        self.headers = [
+            ['Precedence', 'bulk'],
+            # ['List-Unsubscribe', ''],
+            ['List-Unsubscribe', '<mailto:unsubscribe@{}>'.format(self.who.split('@')[-1])],
+            ['Content-Location', 'tr-Turkey'],
+            ['Content-Language', 'tr-Tr'],
+            ['Accept-Language', 'tr-Tr'],
+            ['Date', formatdate()],
+            # ["X-Priority","1 (High)"],
+            ['Reply-To', 'Destek<support@{}>'.format(self.who.split('@')[-1])]
 
+        ]
     def send(self, recipent, filename='', subject="", message=""):
         # self.server.set_debuglevel(1)
-        outer = MIMEMultipart()
+        outer = MIMEMultipart('alternative')
         outer['From'] = '<'+self.who+'>'
         outer['To'] = recipent
         outer['Subject'] = subject
+        #outer['List-Unsubscribe'] = 'mailto:<unsubscribe@wikybetbonus>'
+        print(outer.get('List-Unsubscribe'))
+        msgAlternative = MIMEMultipart('alternative')
+        msgText = MIMEText('This is the alternative plain text message.')
+        msgAlternative.attach(msgText)
+        outer.attach(msgAlternative)
         outer.attach(MIMEText(message, 'html'))
 
-        print(self.who)
+
+        print(self.who," ",recipent)
         for header in self.headers:
             outer.add_header(*header)
-
         if filename is not '':
             path = filename
             # dosyanın türünü tahmin edip ona göre type belirliyoruz
@@ -105,6 +127,7 @@ class Mail:
         # oluşturduğumuz text, html ve file datasını string olarak alıyoruz
 
         composed = outer.as_string()
+
         try:
 
             self.server.sendmail(self.who, [recipent], composed)

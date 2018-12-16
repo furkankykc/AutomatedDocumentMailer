@@ -23,8 +23,9 @@ class MailVertifyer:
                 self.new.append(mail)
                 print(mail)
 
-        refrence['EMAİL']=self.new
-        pd.DataFrame(refrence).to_excel(list,index=False)
+        ref = pd.DataFrame()
+        ref['EMAİL']=self.new
+        pd.DataFrame(ref).to_excel(list,index=False)
 
 
 
@@ -87,7 +88,7 @@ def fixStr(string):
 
 
 
-list = "/home/furkankykc/Downloads/new.xlsx"
+list = "/home/furkankykc/Downloads/ruskiler.xlsx"
 # ad =['furkan','fatih']
 # soyad =['kıyıkcı','kıyıkcı']
 # email =['test@gmail.com','test']
@@ -97,3 +98,11 @@ list = "/home/furkankykc/Downloads/new.xlsx"
 # ref['EMAİL']=email
 # pd.DataFrame(ref).to_excel(list, index=False)
 # fixEncodingList(list)
+# with open(list, "rb") as f:
+#     result = chardet.detect(f.read())  # or readline if the file is large
+# print(result)
+# refrence = pd.read_excel(list, encoding='utf-8')
+# for i in refrence['EMAİL']:
+#     print(i)
+#     # print(i['AD'])
+MailVertifyer(list)

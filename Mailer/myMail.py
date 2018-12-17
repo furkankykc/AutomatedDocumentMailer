@@ -67,6 +67,7 @@ class Mail:
             ['Content-Language', 'tr-Tr'],
             ['Accept-Language', 'tr-Tr'],
             ['Date', formatdate()],
+            ['From', '{} <{}>'.format(self.smtp.split('.')[1].title(),self.who)],
             # ["X-Priority","1 (High)"],
             ['Reply-To', 'Destek<support@{}>'.format(self.who.split('@')[-1])]
 
@@ -74,7 +75,7 @@ class Mail:
     def send(self, recipent, filename='', subject="", message=""):
         # self.server.set_debuglevel(1)
         outer = MIMEMultipart('alternative')
-        outer['From'] = '<'+self.who+'>'
+        # outer['From'] = '<'+self.who+'>'
         outer['To'] = recipent
         outer['Subject'] = subject
         #outer['List-Unsubscribe'] = 'mailto:<unsubscribe@wikybetbonus>'

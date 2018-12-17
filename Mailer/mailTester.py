@@ -9,7 +9,7 @@ import csv
 import xlrd
 
 class MailVertifyer:
-    def __init__(self,list):
+    def __init__(self,list,progressbar =None):
         self.new= []
             # for i in self.new:
             #     employee_writer.writerow([i])
@@ -18,16 +18,23 @@ class MailVertifyer:
         print(result)
         refrence = pd.read_excel(list, encoding='utf-8')
         self.orjList = refrence['EMAİL'].tolist()
+        if progressbar is not None:
+            progressbar["maximum"] = len(self.orjList)
+            progressbar["value"] =0
+            progressbar.start()
         for mail in self.orjList:
             if vertify(mail):
                 self.new.append(mail)
+                if progressbar is not None:
+                    progressbar["value"] = progressbar["value"]+1
+                    progressbar.update()
                 print(mail)
 
         ref = pd.DataFrame()
         ref['EMAİL']=self.new
         pd.DataFrame(ref).to_excel(list,index=False)
-
-
+        if progressbar is not None:
+            progressbar.stop()
 
     def getInfo(self):
         return "Value of Broken Mails \nRemoved : {} From:{} address".format(str(len(self.orjList)-len(self.new)),str(len(self.orjList)))
@@ -88,7 +95,7 @@ def fixStr(string):
 
 
 
-list = "/home/furkankykc/Downloads/ruskiler.xlsx"
+#list = "/home/furkankykc/Downloads/data1.xlsx"
 # ad =['furkan','fatih']
 # soyad =['kıyıkcı','kıyıkcı']
 # email =['test@gmail.com','test']
@@ -105,4 +112,4 @@ list = "/home/furkankykc/Downloads/ruskiler.xlsx"
 # for i in refrence['EMAİL']:
 #     print(i)
 #     # print(i['AD'])
-MailVertifyer(list)
+#MailVertifyer(list)

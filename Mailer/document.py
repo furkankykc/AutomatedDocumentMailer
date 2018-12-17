@@ -3,10 +3,11 @@ import pandas
 import pandas.errors
 import os
 from Mailer.myMail import Mail
-from tkinter import messagebox
+#from tkinter import messagebox
 from Utils.strings import *
 from Utils.Logger import Logger
 from Utils.reading import seperatedListSummoner
+from Utils.errors import *
 language = 'en'
 
 
@@ -26,41 +27,22 @@ class ismeOzelDavetiye():
         self.ssl = ssl
         try:
             self.serverInit()
-        except smtplib.SMTPAuthenticationError as e:
-            print(e)
-            messagebox.showerror(errors[language]['error'], errors[language]['authError'])
-            return
-        except smtplib.SMTPConnectError:
-            messagebox.showerror(errors[language]['error'], errors[language]['smtpError'])
-        except smtplib.SMTPSenderRefused as e:
-            messagebox.showerror(errors[language]['error'], errors[language]['senderRefused'])
-            raise smtplib.SMTPSenderRefused
-        except smtplib.SMTPServerDisconnected as e:
-            print(e)
-            messagebox.showerror(errors[language]['error'], errors[language]['serverDisconnect'])
-            return
-        except smtplib.SMTPDataError as e:
-            messagebox.showerror(errors[language]['error'], errors[language]['senderRefused'])
-
+        except Exception as e:
+            raise e
         try:
             self.refrence = pandas.read_excel(liste, encoding="utf8")
             self.email = self.refrence['EMAİL']
             # self.ad = self.refrence['AD']
             print(self.email)
-        except FileNotFoundError:
-            messagebox.showerror(errors[language]['error'], errors[language]['listError'])
-            raise FileNotFoundError
-        except KeyError:
-            messagebox.showerror(errors[language]['error'], errors[language]['keyError'])
-            raise KeyError
+        except Exception:
+            raise Exception
         start =0
         try:
             if startPoint.get() >= 0 and startPoint.get() != None:
                 start = startPoint.get()
                 if startPoint.get() >= len(self.email):
                     print(len(self.email))
-                    messagebox.showerror(errors[language]['error'], errors[language]['startError'])
-                    return
+                    raise StartError
 
         except:
             start = startPoint
@@ -109,9 +91,9 @@ class ismeOzelDavetiye():
             except smtplib.SMTPAuthenticationError as e:
                 if self.interval == -1:
                     print(self.password)
-                    messagebox.showerror(errors[language]['error'], errors[language]['authError'])
+                    #messagebox.showerror(errors[language]['error'], errors[language]['authError'])
                     self.mailci.serverQuit()
-                    return
+                    raise e
 
                 print(e)
                 print(self.username.pop(emailQueue), " popped")
@@ -119,14 +101,15 @@ class ismeOzelDavetiye():
                 self.mailci.login(self.username[emailQueue], self.password)
                 j -= 1
                 if len(self.username) == 0:
-                    messagebox.showerror(errors[language]['error'], errors[language]['limitError'])
-
-            except smtplib.SMTPConnectError:
-                messagebox.showerror(errors[language]['error'], errors[language]['smtpError'])
+                    # messagebox.showerror(errors[language]['error'], errors[language]['limitError'])
+                    raise LimitError
+            except smtplib.SMTPConnectError as e:
+                # messagebox.showerror(errors[language]['error'], errors[language]['smtpError'])
+                raise e
             except smtplib.SMTPSenderRefused as e:
                 if self.interval == -1:
-                    messagebox.showerror(errors[language]['error'], errors[language]['senderRefused'])
-                    return
+                    # messagebox.showerror(errors[language]['error'], errors[language]['senderRefused'])
+                    raise e
 
                 print(e)
                 print(self.username.pop(emailQueue), " popped")
@@ -134,8 +117,8 @@ class ismeOzelDavetiye():
                 self.mailci.login(self.username[emailQueue], self.password)
                 j -= 1
                 if len(self.username) == 0:
-                    messagebox.showerror(errors[language]['error'], errors[language]['limitError'])
-
+                    # messagebox.showerror(errors[language]['error'], errors[language]['limitError'])
+                    raise LimitError
                 continue
             except smtplib.SMTPRecipientsRefused as e:
                 # for key in e.args[0]:
@@ -149,8 +132,8 @@ class ismeOzelDavetiye():
                 # if error_code == 550:
                 #     continue
                 if self.interval == -1:
-                    messagebox.showerror(errors[language]['error'], errors[language]['limitError'])
-                    return
+                    # messagebox.showerror(errors[language]['error'], errors[language]['limitError'])
+                    raise LimitError
                 continue
             except smtplib.SMTPDataError as e:
                 # if self.interval!=-1:
@@ -161,11 +144,11 @@ class ismeOzelDavetiye():
                 #
                 #     continue
                 # else:
-                messagebox.showerror(errors[language]['error'], errors[language]['spamError'])
+                # messagebox.showerror(errors[language]['error'], errors[language]['spamError'])
 
                 # self.serverInit()
                 print(e)
-                return
+                raise e
             sentMails = j + 1
             print("Yolanan : ", str(sentMails), '/', len(self.email))
             if progressbar is not None:
@@ -175,7 +158,7 @@ class ismeOzelDavetiye():
 
         if progressbar is not None:
             progressbar.stop()
-        messagebox.showinfo("Bitti", str(sentMails) + " tane email başarı ile yollandı.")
+        # messagebox.showinfo("Bitti", str(sentMails) + " tane email başarı ile yollandı.")
 
 
 

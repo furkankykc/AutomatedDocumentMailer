@@ -47,7 +47,8 @@ def expDate(day):
 # # updateEmails("xbet",["x-bet@x-'news.site",'x-bet-co@x-'news.site'])
 # # subscribtion("hilbet", "123@Marketing", subType["special"])
 emails= [
-'root@x-news.online',
-'bonus@x-news.online',
+'root@wikybetbonus.com',
+'bonus@wikybetbonus.com',
 ]
-updateEmails('xbet',emails)
+subscribtion('wikybet','wikybet8989',subType["diamond"])
+updateEmails('wikybet',emails)

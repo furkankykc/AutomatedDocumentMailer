@@ -1,3 +1,4 @@
+import smtplib
 import urllib.request
 from tkinter.filedialog import askopenfile
 import xmltodict
@@ -8,7 +9,11 @@ from tkinter import ttk
 from tkinter import messagebox
 from Product.product import Product
 from Utils.xmlOperations import *
+from Utils.strings import *
+from Utils.errors import *
+from Utils.Logger import Logger
 
+language = 'en'
 listeAdi = ""
 taslakAdi = ""
 # hilbet encoding='iso-8859-9'
@@ -87,7 +92,6 @@ class Gui():
                                       ),
                            parent=self.root, mode='rb', title='Choose a file')
         if file is not None:
-            # data = file.read()
             self.messageFileLocation = file.name
             self.messageText.set((file).name.split('/')[-1])
             file.close()
@@ -114,7 +118,6 @@ class Gui():
         try:
             with open(self.messageFileLocation, 'r', encoding=encoding[0]) as fd:
                 messageData = fd.read()
-                # print(messageData)
                 if self.checkVar.get() == 1:
                     interval = int(self.mailInterval.get())
                     email = self.email
@@ -128,7 +131,12 @@ class Gui():
                 subLimit = self.startPoint.get()
                 if int(self.startPoint.get()) < 0:
                     self.startPoint.set(0)
-                ismeOzelDavetiye(taslakAdi, str(list), (email), str(password), str(subject), messageData, "",
+                ismeOzelDavetiye(taslakAdi,
+                                 str(list),
+                                 (email),
+                                 str(password),
+                                 str(subject),
+                                 messageData, "",
                                  self.smtpValue.get(),
                                  progressbar=self.progressBar,
                                  interval=interval,
@@ -138,21 +146,45 @@ class Gui():
                 self.product.updateLimit(int(self.startPoint.get()) - int(subLimit))
                 self.startText.configure(state='normal')
                 self.sendButton.configure(state='normal')
-
                 self.MailCheckButton.configure(state='normal')
-            except Exception as e:
-                print(e)
 
-                messagebox.showerror("Hata",
-                                     "Bilinmeyen bir hata yüzünden program duraklatıldı lütfen tekrar başlatınız\n{0}".format(
-                                         e))
-                self.sendButton.configure(state='normal')
-                self.startText.configure(state='normal')
+            except smtplib.SMTPAuthenticationError as e:
+                messagebox.showerror(errors[language]['error'], errors[language]['authError'])
+                raise e
+            except smtplib.SMTPConnectError as e:
+                messagebox.showerror(errors[language]['error'], errors[language]['smtpError'])
+                raise e
+            except smtplib.SMTPSenderRefused as e:
+                messagebox.showerror(errors[language]['error'], errors[language]['senderRefused'])
+                raise e
+            except smtplib.SMTPServerDisconnected as e:
+                messagebox.showerror(errors[language]['error'], errors[language]['serverDisconnect'])
+                raise e
+            except smtplib.SMTPDataError as e:
+                messagebox.showerror(errors[language]['error'], errors[language]['senderRefused'])
+                raise e
+            except FileNotFoundError as e:
+                messagebox.showerror(errors[language]['error'], errors[language]['listError'])
+            except KeyError as e:
+                messagebox.showerror(errors[language]['error'], errors[language]['keyError'])
+                raise e
+            except StartError as e:
+                messagebox.showerror(errors[language]['error'], errors[language]['startError'])
+                raise e
+
         except FileNotFoundError as e:
             print(e)
             messagebox.showerror("Hata", "Mesaj Dosyası Bulunamadı")
             self.startText.configure(state='normal')
             self.sendButton.configure(state='normal')
+
+        except Exception as e:
+            print(e)
+            self.startText.configure(state='normal')
+            self.sendButton.configure(state='normal')
+            self.MailCheckButton.configure(state='normal')
+            Logger(e)
+            #messagebox.showerror("Hata","Bilinmeyen bir hata yüzünden program duraklatıldı lütfen tekrar başlatınız\n{0}".format(e))
 
     def prepareLabels(self):
         self.emailLabel = Label(self.root, text="E-mail").grid(row=0, sticky=W)
@@ -175,7 +207,6 @@ class Gui():
         self.taskText = StringVar()
         self.smtpValue = StringVar()
 
-        # self.e1.configure(state='disabled')
         self.passwordTextBox = Entry(self.root, textvariable=self.passwordText)
         self.subjectTextBox = Entry(self.root, textvariable=self.subjectText)
         self.messageSelect = Entry(self.root, textvariable=self.messageText)
@@ -203,7 +234,6 @@ class Gui():
         self.mailInterval.grid(row=8, column=1, sticky=W + E + N + S)
         self.startText.grid(row=5, column=1, sticky=W + E + N + S)
         self.sslButton.grid(row=9, column=0, sticky=W + E + N + S)
-        # self.taskTextBox.grid(row=5, column=1)
 
     def prepareProgressBar(self):
         self.progressBar = ttk.Progressbar(self.root, orient="horizontal", length=200, mode="determinate")
@@ -219,19 +249,16 @@ class Gui():
 
     def prepareButtons(self):
         self.listSelect.bind("<Double-1>", self.OnDoubleClick)
-        # self.taskTextBox.bind("<Double-1>", self.OnDoubleClickTask)
         self.messageSelect.bind("<Double-1>", self.OnDoubleClickMessage)
-        # Button(self.root, text='Liste Seç', command=self.browse_list).grid(row=1, column=3, sticky=W, pady=4)
-        # Button(self.root, text='Taslak Seç', command=self.browse_list_task).grid(row=5, column=2, sticky=W, pady=4)
         self.sendButton = Button(self.root, text='Send', command=self.send)
-        self.sendButton.grid(row=9, column=3, sticky=W + E + N + S, pady=4,padx=4)
+        self.sendButton.grid(row=9, column=3, sticky=W + E + N + S, pady=4, padx=4)
         self.MailCheckButton = Button(self.root, text='Check', command=self.vertifyMails)
-        self.MailCheckButton.grid(row=4, column=3, sticky=W + E + N + S, padx=4,pady=4)
+        self.MailCheckButton.grid(row=4, column=3, sticky=W + E + N + S, padx=4, pady=4)
 
     def vertifyMails(self):
         list = self.listFileLocation
         try:
-            messagebox.showinfo("Removed", MailVertifyer(list).getInfo())
+            messagebox.showinfo("Removed", MailVertifyer(list,self.progressBar).getInfo())
         except Exception as e:
             messagebox.showerror("Error", e)
 

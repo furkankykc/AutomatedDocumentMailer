@@ -1,459 +1,0 @@
-2018-10-26 10:59:45.060225-->Sender:info-xbet@x-news.online | Recipent:dr4mk@hotmail.com, OK
-2018-10-26 10:59:46.290586-->Sender:info-xbet@x-news.online | Recipent:furkan_1199_fbr@hotmail.com, OK
-2018-10-26 10:59:47.671037-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@hotmail.com, OK
-2018-10-26 11:00:27.380157-->Sender:info-xbet@x-news.online | Recipent:dr4mk@hotmail.com, OK
-2018-10-26 11:00:28.637679-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@gmail.com, OK
-2018-10-26 11:00:29.911488-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@hotmail.com, OK
-2018-10-26 11:00:31.220186-->Sender:info-xbet@x-news.online | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-26 11:00:32.440183-->Sender:info-xbet@x-news.online | Recipent:danielmiller@x-bet.co, OK
-2018-10-26 11:00:33.740306-->Sender:info-xbet@x-news.online | Recipent:neizzhaliy@gmail.com, OK
-2018-10-26 11:00:34.830449-->Sender:info-xbet@x-news.online | Recipent:momfmtr@ukr.net, OK
-2018-10-26 11:00:35.980181-->Sender:info-xbet@x-news.online | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-26 11:01:03.790138-->Sender:info-xbet@x-news.online | Recipent:dr4mk@hotmail.com, OK
-2018-10-26 11:01:04.951140-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@gmail.com, OK
-2018-10-26 11:01:06.390237-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@hotmail.com, OK
-2018-10-26 11:01:07.630454-->Sender:info-xbet@x-news.online | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-26 11:10:52.284490-->Sender:info-xbet@x-news.online | Recipent:test-gf9ca@mail-tester.com, OK
-2018-10-26 11:21:20.089678-->Sender:info-xbet@x-news.online | Recipent:dr4mk@hotmail.com, OK
-2018-10-26 11:21:21.218860-->Sender:info-xbet@x-news.online | Recipent:furkan_1199_fbr@hotmail.com, OK
-2018-10-26 11:21:22.550011-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@hotmail.com, OK
-2018-10-26 11:22:31.589999-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@gmail.com, OK
-2018-10-26 11:22:33.479846-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@hotmail.com, OK
-2018-10-26 11:22:34.569999-->Sender:info-xbet@x-news.online | Recipent:danielmiller@x-bet.co, OK
-2018-10-26 11:22:35.699912-->Sender:info-xbet@x-news.online | Recipent:neizzhalyi@gmail.com, OK
-2018-10-26 11:22:36.980878-->Sender:info-xbet@x-news.online | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-26 11:22:38.049627-->Sender:info-xbet@x-news.online | Recipent:070leyk@gmail.com, OK
-2018-10-26 11:22:39.159633-->Sender:info-xbet@x-news.online | Recipent:tatianahetman5@gmail.com, OK
-2018-10-26 11:22:40.220750-->Sender:info-xbet@x-news.online | Recipent:iryna.markiv.v@gmail.com, OK
-2018-10-26 11:22:41.459599-->Sender:info-xbet@x-news.online | Recipent:ivannakanak777@gmail.com, OK
-2018-10-26 11:22:42.729738-->Sender:info-xbet@x-news.online | Recipent:bohdan.stepanko4@gmail.com, OK
-2018-10-26 13:39:47.116823-->Sender:info-xbet@x-news.online | Recipent:test-wb8gt@mail-tester.com, OK
-2018-10-27 19:52:54.876822-->Sender:x-bet-co@x-news.online | Recipent:test-wb8gt@mail-tester.com, OK
-2018-10-27 19:54:13.995723-->Sender:x-bet-co@x-news.online | Recipent:test-wb8gt@mail-tester.com, OK
-2018-10-27 19:54:46.555010-->Sender:x-bet-co@x-news.online | Recipent:furkanfbr@gmail.com, OK
-2018-10-27 19:54:47.940020-->Sender:x-bet-co@x-news.online | Recipent:furkanfbr@hotmail.com, OK
-2018-10-27 19:54:49.136013-->Sender:x-bet-co@x-news.online | Recipent:danielmiller@x-bet.co, OK
-2018-10-27 19:54:50.582948-->Sender:x-bet-co@x-news.online | Recipent:neizzhalyi@gmail.com, OK
-2018-10-27 19:54:51.780664-->Sender:x-bet-co@x-news.online | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-27 19:54:52.943054-->Sender:x-bet-co@x-news.online | Recipent:070leyk@gmail.com, OK
-2018-10-27 19:54:54.426994-->Sender:x-bet-co@x-news.online | Recipent:tatianahetman5@gmail.com, OK
-2018-10-27 19:54:55.618897-->Sender:x-bet-co@x-news.online | Recipent:iryna.markiv.v@gmail.com, OK
-2018-10-27 19:54:57.063869-->Sender:x-bet-co@x-news.online | Recipent:ivannakanak777@gmail.com, OK
-2018-10-27 19:54:58.576034-->Sender:x-bet-co@x-news.online | Recipent:bohdan.stepanko4@gmail.com, OK
-2018-10-27 19:54:59.700093-->Sender:x-bet-co@x-news.online | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-27 21:35:17.619683-->Sender:x-bet-co@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-27 21:35:18.764405-->Sender:x-bet-co@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-27 21:35:19.908072-->Sender:x-bet-co@x-news.site | Recipent:danielmiller@x-bet.co, OK
-2018-10-27 21:35:21.047844-->Sender:x-bet-co@x-news.site | Recipent:neizzhalyi@gmail.com, OK
-2018-10-27 21:35:22.204532-->Sender:x-bet-co@x-news.site | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-27 21:35:23.410371-->Sender:x-bet-co@x-news.site | Recipent:070leyk@gmail.com, OK
-2018-10-27 21:35:24.555939-->Sender:x-bet-co@x-news.site | Recipent:tatianahetman5@gmail.com, OK
-2018-10-27 21:35:25.712274-->Sender:x-bet-co@x-news.site | Recipent:iryna.markiv.v@gmail.com, OK
-2018-10-27 21:35:26.868322-->Sender:x-bet-co@x-news.site | Recipent:ivannakanak777@gmail.com, OK
-2018-10-27 21:35:28.013192-->Sender:x-bet-co@x-news.site | Recipent:bohdan.stepanko4@gmail.com, OK
-2018-10-27 21:35:29.162659-->Sender:x-bet-co@x-news.site | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-27 23:26:48.784835-->Sender:x-bet@x-news.site | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-27 23:28:09.681377-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-27 23:28:10.910158-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-27 23:28:12.108246-->Sender:x-bet@x-news.site | Recipent:danielmiller@x-bet.co, OK
-2018-10-27 23:28:13.163631-->Sender:x-bet@x-news.site | Recipent:neizzhalyi@gmail.com, OK
-2018-10-27 23:28:14.392805-->Sender:x-bet@x-news.site | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-27 23:28:15.590534-->Sender:x-bet@x-news.site | Recipent:070leyk@gmail.com, OK
-2018-10-27 23:28:16.644399-->Sender:x-bet@x-news.site | Recipent:tatianahetman5@gmail.com, OK
-2018-10-27 23:28:17.976191-->Sender:x-bet@x-news.site | Recipent:iryna.markiv.v@gmail.com, OK
-2018-10-27 23:28:19.204726-->Sender:x-bet@x-news.site | Recipent:ivannakanak777@gmail.com, OK
-2018-10-27 23:28:20.536547-->Sender:x-bet@x-news.site | Recipent:bohdan.stepanko4@gmail.com, OK
-2018-10-27 23:28:21.764962-->Sender:x-bet@x-news.site | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-27 23:59:50.292000-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-27 23:59:51.341717-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-27 23:59:52.392360-->Sender:x-bet@x-news.site | Recipent:danielmiller@x-bet.co, OK
-2018-10-27 23:59:53.444963-->Sender:x-bet@x-news.site | Recipent:neizzhalyi@gmail.com, OK
-2018-10-27 23:59:54.491745-->Sender:x-bet@x-news.site | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-27 23:59:55.537499-->Sender:x-bet@x-news.site | Recipent:070leyk@gmail.com, OK
-2018-10-27 23:59:56.589515-->Sender:x-bet@x-news.site | Recipent:tatianahetman5@gmail.com, OK
-2018-10-27 23:59:57.636797-->Sender:x-bet@x-news.site | Recipent:iryna.markiv.v@gmail.com, OK
-2018-10-27 23:59:58.682836-->Sender:x-bet@x-news.site | Recipent:ivannakanak777@gmail.com, OK
-2018-10-27 23:59:59.733706-->Sender:x-bet@x-news.site | Recipent:bohdan.stepanko4@gmail.com, OK
-2018-10-28 00:00:00.779124-->Sender:x-bet@x-news.site | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-28 00:04:51.956373-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 00:04:52.971888-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 00:04:54.007296-->Sender:x-bet@x-news.site | Recipent:danielmiller@x-bet.co, OK
-2018-10-28 00:04:55.012866-->Sender:x-bet@x-news.site | Recipent:neizzhalyi@gmail.com, OK
-2018-10-28 00:04:56.024381-->Sender:x-bet@x-news.site | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-28 00:04:57.035060-->Sender:x-bet@x-news.site | Recipent:070leyk@gmail.com, OK
-2018-10-28 00:04:58.038205-->Sender:x-bet@x-news.site | Recipent:tatianahetman5@gmail.com, OK
-2018-10-28 00:04:59.082208-->Sender:x-bet@x-news.site | Recipent:iryna.markiv.v@gmail.com, OK
-2018-10-28 00:05:00.088457-->Sender:x-bet@x-news.site | Recipent:ivannakanak777@gmail.com, OK
-2018-10-28 00:05:01.101996-->Sender:x-bet@x-news.site | Recipent:bohdan.stepanko4@gmail.com, OK
-2018-10-28 00:05:02.140642-->Sender:x-bet@x-news.site | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-28 00:06:08.990249-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 00:06:10.035132-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 00:06:11.093039-->Sender:x-bet@x-news.site | Recipent:danielmiller@x-bet.co, OK
-2018-10-28 00:06:12.136287-->Sender:x-bet@x-news.site | Recipent:neizzhalyi@gmail.com, OK
-2018-10-28 00:06:13.181806-->Sender:x-bet@x-news.site | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-28 00:06:14.253147-->Sender:x-bet@x-news.site | Recipent:070leyk@gmail.com, OK
-2018-10-28 00:06:15.293741-->Sender:x-bet@x-news.site | Recipent:tatianahetman5@gmail.com, OK
-2018-10-28 00:06:16.336446-->Sender:x-bet@x-news.site | Recipent:iryna.markiv.v@gmail.com, OK
-2018-10-28 00:06:17.593015-->Sender:x-bet@x-news.site | Recipent:ivannakanak777@gmail.com, OK
-2018-10-28 00:06:18.704519-->Sender:x-bet@x-news.site | Recipent:bohdan.stepanko4@gmail.com, OK
-2018-10-28 00:06:19.747501-->Sender:x-bet@x-news.site | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-28 00:16:26.223479-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 00:16:27.220465-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 00:16:28.448291-->Sender:x-bet@x-news.site | Recipent:danielmiller@x-bet.co, OK
-2018-10-28 00:16:29.576124-->Sender:x-bet@x-news.site | Recipent:neizzhalyi@gmail.com, OK
-2018-10-28 00:16:30.804183-->Sender:x-bet@x-news.site | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-28 00:16:31.998343-->Sender:x-bet@x-news.site | Recipent:070leyk@gmail.com, OK
-2018-10-28 00:16:33.261931-->Sender:x-bet@x-news.site | Recipent:tatianahetman5@gmail.com, OK
-2018-10-28 00:16:34.388686-->Sender:x-bet@x-news.site | Recipent:iryna.markiv.v@gmail.com, OK
-2018-10-28 00:16:35.583942-->Sender:x-bet@x-news.site | Recipent:ivannakanak777@gmail.com, OK
-2018-10-28 00:16:36.742746-->Sender:x-bet@x-news.site | Recipent:bohdan.stepanko4@gmail.com, OK
-2018-10-28 00:16:37.971288-->Sender:x-bet@x-news.site | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-28 00:24:11.915176-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 00:24:13.225480-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 00:24:14.372757-->Sender:x-bet@x-news.site | Recipent:danielmiller@x-bet.co, OK
-2018-10-28 00:24:15.610897-->Sender:x-bet@x-news.site | Recipent:neizzhalyi@gmail.com, OK
-2018-10-28 00:24:16.759755-->Sender:x-bet@x-news.site | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-28 00:24:17.856515-->Sender:x-bet@x-news.site | Recipent:070leyk@gmail.com, OK
-2018-10-28 00:24:19.185922-->Sender:x-bet@x-news.site | Recipent:tatianahetman5@gmail.com, OK
-2018-10-28 00:24:20.278248-->Sender:x-bet@x-news.site | Recipent:iryna.markiv.v@gmail.com, OK
-2018-10-28 00:24:21.437652-->Sender:x-bet@x-news.site | Recipent:ivannakanak777@gmail.com, OK
-2018-10-28 00:24:22.667040-->Sender:x-bet@x-news.site | Recipent:bohdan.stepanko4@gmail.com, OK
-2018-10-28 00:24:23.789483-->Sender:x-bet@x-news.site | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-28 00:37:04.840771-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 00:37:06.071274-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 00:37:07.298726-->Sender:x-bet@x-news.site | Recipent:danielmiller@x-bet.co, OK
-2018-10-28 00:37:08.528997-->Sender:x-bet@x-news.site | Recipent:neizzhalyi@gmail.com, OK
-2018-10-28 00:37:09.680243-->Sender:x-bet@x-news.site | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-28 00:40:46.438059-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 00:40:47.565009-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 00:40:48.794112-->Sender:x-bet@x-news.site | Recipent:danielmiller@x-bet.co, OK
-2018-10-28 00:40:50.136805-->Sender:x-bet@x-news.site | Recipent:neizzhalyi@gmail.com, OK
-2018-10-28 00:40:51.359179-->Sender:x-bet@x-news.site | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-28 00:40:52.685337-->Sender:x-bet@x-news.site | Recipent:070leyk@gmail.com, OK
-2018-10-28 00:40:53.831699-->Sender:x-bet@x-news.site | Recipent:tatianahetman5@gmail.com, OK
-2018-10-28 00:40:54.947678-->Sender:x-bet@x-news.site | Recipent:iryna.markiv.v@gmail.com, OK
-2018-10-28 00:40:56.166799-->Sender:x-bet@x-news.site | Recipent:ivannakanak777@gmail.com, OK
-2018-10-28 00:40:57.302811-->Sender:x-bet@x-news.site | Recipent:bohdan.stepanko4@gmail.com, OK
-2018-10-28 00:40:58.419815-->Sender:x-bet@x-news.site | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-28 00:55:32.441601-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 00:55:33.457981-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 00:55:34.483427-->Sender:x-bet@x-news.site | Recipent:danielmiller@x-bet.co, OK
-2018-10-28 00:55:35.554894-->Sender:x-bet@x-news.site | Recipent:neizzhalyi@gmail.com, OK
-2018-10-28 00:55:36.664243-->Sender:x-bet@x-news.site | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-28 00:55:37.679223-->Sender:x-bet@x-news.site | Recipent:070leyk@gmail.com, OK
-2018-10-28 00:55:38.695904-->Sender:x-bet@x-news.site | Recipent:tatianahetman5@gmail.com, OK
-2018-10-28 00:55:39.712622-->Sender:x-bet@x-news.site | Recipent:iryna.markiv.v@gmail.com, OK
-2018-10-28 00:55:40.726089-->Sender:x-bet@x-news.site | Recipent:ivannakanak777@gmail.com, OK
-2018-10-28 00:55:41.739675-->Sender:x-bet@x-news.site | Recipent:bohdan.stepanko4@gmail.com, OK
-2018-10-28 00:55:42.755428-->Sender:x-bet@x-news.site | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-28 01:35:54.448565-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 01:35:55.605277-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 01:35:56.767501-->Sender:x-bet@x-news.site | Recipent:danielmiller@x-bet.co, OK
-2018-10-28 01:35:57.920556-->Sender:x-bet@x-news.site | Recipent:neizzhalyi@gmail.com, OK
-2018-10-28 01:35:59.075388-->Sender:x-bet@x-news.site | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-28 01:36:00.225573-->Sender:x-bet@x-news.site | Recipent:070leyk@gmail.com, OK
-2018-10-28 01:36:01.395248-->Sender:x-bet@x-news.site | Recipent:tatianahetman5@gmail.com, OK
-2018-10-28 01:36:02.737135-->Sender:x-bet@x-news.site | Recipent:iryna.markiv.v@gmail.com, OK
-2018-10-28 01:36:03.898400-->Sender:x-bet@x-news.site | Recipent:ivannakanak777@gmail.com, OK
-2018-10-28 01:36:05.053188-->Sender:x-bet@x-news.site | Recipent:bohdan.stepanko4@gmail.com, OK
-2018-10-28 01:36:06.212705-->Sender:x-bet@x-news.site | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-28 01:53:34.090461-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 01:53:35.278841-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 01:53:36.470366-->Sender:x-bet@x-news.site | Recipent:danielmiller@x-bet.co, OK
-2018-10-28 01:53:37.675234-->Sender:x-bet@x-news.site | Recipent:neizzhalyi@gmail.com, OK
-2018-10-28 01:53:38.866204-->Sender:x-bet@x-news.site | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-28 01:53:40.056382-->Sender:x-bet@x-news.site | Recipent:070leyk@gmail.com, OK
-2018-10-28 01:53:41.255450-->Sender:x-bet@x-news.site | Recipent:tatianahetman5@gmail.com, OK
-2018-10-28 01:53:42.449742-->Sender:x-bet@x-news.site | Recipent:iryna.markiv.v@gmail.com, OK
-2018-10-28 01:53:43.639225-->Sender:x-bet@x-news.site | Recipent:ivannakanak777@gmail.com, OK
-2018-10-28 01:53:44.822426-->Sender:x-bet@x-news.site | Recipent:bohdan.stepanko4@gmail.com, OK
-2018-10-28 01:53:46.011209-->Sender:x-bet@x-news.site | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-28 02:05:20.128206-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 02:05:21.411027-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 02:05:22.597929-->Sender:x-bet@x-news.site | Recipent:danielmiller@x-bet.co, OK
-2018-10-28 02:05:23.852914-->Sender:x-bet@x-news.site | Recipent:neizzhalyi@gmail.com, OK
-2018-10-28 02:05:25.064057-->Sender:x-bet@x-news.site | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-28 02:05:26.229639-->Sender:x-bet@x-news.site | Recipent:070leyk@gmail.com, OK
-2018-10-28 02:05:27.391773-->Sender:x-bet@x-news.site | Recipent:tatianahetman5@gmail.com, OK
-2018-10-28 02:05:28.556931-->Sender:x-bet@x-news.site | Recipent:iryna.markiv.v@gmail.com, OK
-2018-10-28 02:05:29.727156-->Sender:x-bet@x-news.site | Recipent:ivannakanak777@gmail.com, OK
-2018-10-28 02:05:30.979397-->Sender:x-bet@x-news.site | Recipent:bohdan.stepanko4@gmail.com, OK
-2018-10-28 02:05:32.164159-->Sender:x-bet@x-news.site | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-28 02:07:37.765719-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 02:07:39.031347-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 02:07:40.349731-->Sender:x-bet@x-news.site | Recipent:danielmiller@x-bet.co, OK
-2018-10-28 02:07:41.601233-->Sender:x-bet@x-news.site | Recipent:neizzhalyi@gmail.com, OK
-2018-10-28 02:07:42.886719-->Sender:x-bet@x-news.site | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-28 02:07:44.158367-->Sender:x-bet@x-news.site | Recipent:070leyk@gmail.com, OK
-2018-10-28 02:07:45.424335-->Sender:x-bet@x-news.site | Recipent:tatianahetman5@gmail.com, OK
-2018-10-28 02:07:46.710492-->Sender:x-bet@x-news.site | Recipent:iryna.markiv.v@gmail.com, OK
-2018-10-28 02:07:48.038100-->Sender:x-bet@x-news.site | Recipent:ivannakanak777@gmail.com, OK
-2018-10-28 02:07:49.303499-->Sender:x-bet@x-news.site | Recipent:bohdan.stepanko4@gmail.com, OK
-2018-10-28 02:07:50.566949-->Sender:x-bet@x-news.site | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-28 02:17:01.140633-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 02:17:02.398220-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 02:17:04.429597-->Sender:x-bet@x-news.site | Recipent:danielmiller@x-bet.co, OK
-2018-10-28 02:17:05.691831-->Sender:x-bet@x-news.site | Recipent:neizzhalyi@gmail.com, OK
-2018-10-28 02:17:06.956720-->Sender:x-bet@x-news.site | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-28 02:17:08.217769-->Sender:x-bet@x-news.site | Recipent:070leyk@gmail.com, OK
-2018-10-28 02:17:09.470770-->Sender:x-bet@x-news.site | Recipent:tatianahetman5@gmail.com, OK
-2018-10-28 02:17:10.687993-->Sender:x-bet@x-news.site | Recipent:iryna.markiv.v@gmail.com, OK
-2018-10-28 02:17:11.919891-->Sender:x-bet@x-news.site | Recipent:ivannakanak777@gmail.com, OK
-2018-10-28 02:17:13.142369-->Sender:x-bet@x-news.site | Recipent:bohdan.stepanko4@gmail.com, OK
-2018-10-28 02:17:14.443191-->Sender:x-bet@x-news.site | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-28 02:17:29.928051-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 02:17:31.302704-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 02:17:32.627992-->Sender:x-bet@x-news.site | Recipent:danielmiller@x-bet.co, OK
-2018-10-28 02:17:33.883282-->Sender:x-bet@x-news.site | Recipent:neizzhalyi@gmail.com, OK
-2018-10-28 02:17:35.143144-->Sender:x-bet@x-news.site | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-28 02:17:36.407125-->Sender:x-bet@x-news.site | Recipent:070leyk@gmail.com, OK
-2018-10-28 02:17:37.712878-->Sender:x-bet@x-news.site | Recipent:tatianahetman5@gmail.com, OK
-2018-10-28 02:17:39.006657-->Sender:x-bet@x-news.site | Recipent:iryna.markiv.v@gmail.com, OK
-2018-10-28 02:17:40.289863-->Sender:x-bet@x-news.site | Recipent:ivannakanak777@gmail.com, OK
-2018-10-28 02:17:41.625519-->Sender:x-bet@x-news.site | Recipent:bohdan.stepanko4@gmail.com, OK
-2018-10-28 02:17:42.961237-->Sender:x-bet@x-news.site | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-28 20:48:02.699058-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 20:48:03.903425-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 20:48:05.088251-->Sender:x-bet@x-news.site | Recipent:danielmiller@x-bet.co, OK
-2018-10-28 20:48:06.277371-->Sender:x-bet@x-news.site | Recipent:neizzhalyi@gmail.com, OK
-2018-10-28 20:48:07.475604-->Sender:x-bet@x-news.site | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-28 20:50:19.052172-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 20:50:20.186644-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 20:50:21.335084-->Sender:x-bet@x-news.site | Recipent:danielmiller@x-bet.co, OK
-2018-10-28 20:50:22.924425-->Sender:x-bet@x-news.site | Recipent:neizzhalyi@gmail.com, OK
-2018-10-28 20:50:24.068921-->Sender:x-bet@x-news.site | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-28 20:50:25.201021-->Sender:x-bet@x-news.site | Recipent:070leyk@gmail.com, OK
-2018-10-28 20:50:26.352657-->Sender:x-bet@x-news.site | Recipent:tatianahetman5@gmail.com, OK
-2018-10-28 20:50:27.490036-->Sender:x-bet@x-news.site | Recipent:iryna.markiv.v@gmail.com, OK
-2018-10-28 20:50:28.628467-->Sender:x-bet@x-news.site | Recipent:ivannakanak777@gmail.com, OK
-2018-10-28 20:50:29.777585-->Sender:x-bet@x-news.site | Recipent:bohdan.stepanko4@gmail.com, OK
-2018-10-28 20:50:30.905850-->Sender:x-bet@x-news.site | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-28 22:44:22.197905-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 22:44:23.973120-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 22:44:25.399766-->Sender:furkanfbr@gmail.com | Recipent:dr4mk@hotmail.com, OK
-2018-10-28 22:44:26.787130-->Sender:furkanfbr@gmail.com | Recipent:furkanyour@gmail.com, OK
-2018-10-28 22:48:01.678191-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 22:48:03.156967-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 22:48:04.562510-->Sender:furkanfbr@gmail.com | Recipent:dr4mk@hotmail.com, OK
-2018-10-28 22:48:06.063822-->Sender:furkanfbr@gmail.com | Recipent:furkanyour@gmail.com, OK
-2018-10-28 22:50:18.475634-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 22:50:19.847786-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 22:50:21.190516-->Sender:furkanfbr@gmail.com | Recipent:dr4mk@hotmail.com, OK
-2018-10-28 22:50:22.608667-->Sender:furkanfbr@gmail.com | Recipent:furkanyour@gmail.com, OK
-2018-10-28 22:50:45.740845-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 22:50:47.155498-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 22:50:48.637518-->Sender:furkanfbr@gmail.com | Recipent:dr4mk@hotmail.com, OK
-2018-10-28 22:50:50.202259-->Sender:furkanfbr@gmail.com | Recipent:furkanyour@gmail.com, OK
-2018-10-28 22:51:11.900785-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 22:51:13.289908-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 22:51:14.791267-->Sender:furkanfbr@gmail.com | Recipent:dr4mk@hotmail.com, OK
-2018-10-28 22:51:16.242342-->Sender:furkanfbr@gmail.com | Recipent:furkanyour@gmail.com, OK
-2018-10-28 22:54:56.266629-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 22:54:57.863613-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 22:54:59.351080-->Sender:furkanfbr@gmail.com | Recipent:dr4mk@hotmail.com, OK
-2018-10-28 22:55:01.062275-->Sender:furkanfbr@gmail.com | Recipent:furkanyour@gmail.com, OK
-2018-10-28 22:57:05.754535-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 22:57:07.136884-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 22:57:08.666768-->Sender:furkanfbr@gmail.com | Recipent:dr4mk@hotmail.com, OK
-2018-10-28 22:57:10.220003-->Sender:furkanfbr@gmail.com | Recipent:furkanyour@gmail.com, OK
-2018-10-28 22:58:13.201437-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 22:58:14.689346-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 22:58:16.148346-->Sender:furkanfbr@gmail.com | Recipent:dr4mk@hotmail.com, OK
-2018-10-28 22:58:17.854292-->Sender:furkanfbr@gmail.com | Recipent:furkanyour@gmail.com, OK
-2018-10-28 22:59:17.255205-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 22:59:18.731586-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 22:59:20.351968-->Sender:furkanfbr@gmail.com | Recipent:dr4mk@hotmail.com, OK
-2018-10-28 22:59:21.919450-->Sender:furkanfbr@gmail.com | Recipent:furkanyour@gmail.com, OK
-2018-10-28 23:01:30.539604-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 23:01:32.094111-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 23:01:33.927851-->Sender:furkanfbr@gmail.com | Recipent:dr4mk@hotmail.com, OK
-2018-10-28 23:01:35.794894-->Sender:furkanfbr@gmail.com | Recipent:furkanyour@gmail.com, OK
-2018-10-28 23:04:47.883172-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 23:04:49.374780-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 23:04:51.283996-->Sender:furkanfbr@gmail.com | Recipent:dr4mk@hotmail.com, OK
-2018-10-28 23:04:52.863794-->Sender:furkanfbr@gmail.com | Recipent:furkanyour@gmail.com, OK
-2018-10-28 23:06:35.051525-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 23:06:36.776766-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 23:06:38.358232-->Sender:furkanfbr@gmail.com | Recipent:dr4mk@hotmail.com, OK
-2018-10-28 23:06:39.970705-->Sender:furkanfbr@gmail.com | Recipent:furkanyour@gmail.com, OK
-2018-10-28 23:07:51.873931-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@gmail.com, OK
-2018-10-28 23:07:53.382468-->Sender:furkanfbr@gmail.com | Recipent:furkanfbr@hotmail.com, OK
-2018-10-28 23:07:55.290514-->Sender:furkanfbr@gmail.com | Recipent:dr4mk@hotmail.com, OK
-2018-10-28 23:07:56.965397-->Sender:furkanfbr@gmail.com | Recipent:furkanyour@gmail.com, OK
-2018-10-29 01:47:41.214238-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-29 01:47:42.416821-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-29 01:47:43.625679-->Sender:x-bet@x-news.site | Recipent:dr4mk@hotmail.com, OK
-2018-10-29 01:47:44.830141-->Sender:x-bet@x-news.site | Recipent:furkanyour@gmail.com, OK
-2018-10-29 01:49:50.553579-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-29 01:49:51.710896-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-29 01:49:52.869870-->Sender:x-bet@x-news.site | Recipent:dr4mk@hotmail.com, OK
-2018-10-29 01:49:54.016343-->Sender:x-bet@x-news.site | Recipent:furkanyour@gmail.com, OK
-2018-10-29 01:53:52.988684-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-29 01:53:54.132409-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-29 01:53:55.274283-->Sender:x-bet@x-news.site | Recipent:dr4mk@hotmail.com, OK
-2018-10-29 01:53:56.419867-->Sender:x-bet@x-news.site | Recipent:furkanyour@gmail.com, OK
-2018-10-29 03:00:54.627185-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-29 03:00:55.813755-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-29 03:00:56.993895-->Sender:x-bet@x-news.site | Recipent:dr4mk@hotmail.com, OK
-2018-10-29 03:00:58.181602-->Sender:x-bet@x-news.site | Recipent:furkanyour@gmail.com, OK
-2018-10-29 03:08:50.550305-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-29 03:08:51.760014-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-29 03:08:52.906891-->Sender:x-bet@x-news.site | Recipent:dr4mk@hotmail.com, OK
-2018-10-29 03:08:54.046598-->Sender:x-bet@x-news.site | Recipent:furkanyour@gmail.com, OK
-2018-10-29 03:09:49.057842-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-29 03:09:50.213311-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-29 03:09:51.382860-->Sender:x-bet@x-news.site | Recipent:dr4mk@hotmail.com, OK
-2018-10-29 03:09:52.540492-->Sender:x-bet@x-news.site | Recipent:furkanyour@gmail.com, OK
-2018-10-29 03:15:53.828399-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-29 03:15:54.987493-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-29 03:15:56.144521-->Sender:x-bet@x-news.site | Recipent:dr4mk@hotmail.com, OK
-2018-10-29 03:15:57.296808-->Sender:x-bet@x-news.site | Recipent:furkanyour@gmail.com, OK
-2018-10-29 03:22:16.230039-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-29 03:22:17.422272-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-29 03:22:18.609888-->Sender:x-bet@x-news.site | Recipent:dr4mk@hotmail.com, OK
-2018-10-29 03:22:19.788867-->Sender:x-bet@x-news.site | Recipent:furkanyour@gmail.com, OK
-2018-10-29 03:23:00.504069-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-29 03:23:01.702897-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-29 03:23:02.908197-->Sender:x-bet@x-news.site | Recipent:dr4mk@hotmail.com, OK
-2018-10-29 03:23:04.088969-->Sender:x-bet@x-news.site | Recipent:furkanyour@gmail.com, OK
-2018-10-29 03:24:36.228033-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-29 03:24:37.360756-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-29 03:24:38.497470-->Sender:x-bet@x-news.site | Recipent:dr4mk@hotmail.com, OK
-2018-10-29 03:24:39.628621-->Sender:x-bet@x-news.site | Recipent:furkanyour@gmail.com, OK
-2018-10-29 03:34:35.808151-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-29 03:34:37.002981-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-29 03:34:38.202496-->Sender:x-bet@x-news.site | Recipent:dr4mk@hotmail.com, OK
-2018-10-29 03:34:39.381065-->Sender:x-bet@x-news.site | Recipent:furkanyour@gmail.com, OK
-2018-10-29 03:38:55.610866-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-29 03:38:56.578597-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-29 03:38:57.552993-->Sender:x-bet@x-news.site | Recipent:dr4mk@hotmail.com, OK
-2018-10-29 03:38:58.519071-->Sender:x-bet@x-news.site | Recipent:furkanyour@gmail.com, OK
-2018-10-29 03:42:01.946079-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-29 03:42:03.078742-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-29 03:42:04.222546-->Sender:x-bet@x-news.site | Recipent:dr4mk@hotmail.com, OK
-2018-10-29 03:42:05.353987-->Sender:x-bet@x-news.site | Recipent:furkanyour@gmail.com, OK
-2018-10-29 11:46:30.647563-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-29 11:46:31.844476-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-29 11:46:33.042754-->Sender:x-bet@x-news.site | Recipent:dr4mk@hotmail.com, OK
-2018-10-29 11:46:34.243655-->Sender:x-bet@x-news.site | Recipent:furkanyour@gmail.com, OK
-2018-10-29 11:50:34.086950-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-29 11:50:35.248904-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-29 11:50:36.418528-->Sender:x-bet@x-news.site | Recipent:dr4mk@hotmail.com, OK
-2018-10-29 11:50:37.582645-->Sender:x-bet@x-news.site | Recipent:furkanyour@gmail.com, OK
-2018-10-29 13:00:52.143631-->Sender:x-bet@x-news.site | Recipent:furkanfbr@gmail.com, OK
-2018-10-29 13:00:53.105103-->Sender:x-bet@x-news.site | Recipent:furkanfbr@hotmail.com, OK
-2018-10-29 13:00:54.069866-->Sender:x-bet@x-news.site | Recipent:danielmiller@x-bet.co, OK
-2018-10-29 13:00:55.030772-->Sender:x-bet@x-news.site | Recipent:neizzhalyi@gmail.com, OK
-2018-10-29 13:00:56.000335-->Sender:x-bet@x-news.site | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-29 13:00:56.968919-->Sender:x-bet@x-news.site | Recipent:070leyk@gmail.com, OK
-2018-10-29 13:00:57.943505-->Sender:x-bet@x-news.site | Recipent:tatianahetman5@gmail.com, OK
-2018-10-29 13:00:58.927083-->Sender:x-bet@x-news.site | Recipent:iryna.markiv.v@gmail.com, OK
-2018-10-29 13:00:59.885057-->Sender:x-bet@x-news.site | Recipent:ivannakanak777@gmail.com, OK
-2018-10-29 13:01:00.847506-->Sender:x-bet@x-news.site | Recipent:bohdan.stepanko4@gmail.com, OK
-2018-10-29 13:01:01.807348-->Sender:x-bet@x-news.site | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-29 17:55:06.878763-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@gmail.com, OK
-2018-10-29 17:55:08.196904-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@hotmail.com, OK
-2018-10-29 17:55:09.480842-->Sender:info-xbet@x-news.online | Recipent:danielmiller@x-bet.co, OK
-2018-10-29 17:55:10.769045-->Sender:info-xbet@x-news.online | Recipent:neizzhalyi@gmail.com, OK
-2018-10-29 17:55:12.033214-->Sender:info-xbet@x-news.online | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-29 17:55:13.116996-->Sender:info-xbet@x-news.online | Recipent:070leyk@gmail.com, OK
-2018-10-29 17:55:14.385120-->Sender:info-xbet@x-news.online | Recipent:tatianahetman5@gmail.com, OK
-2018-10-29 17:55:15.564110-->Sender:info-xbet@x-news.online | Recipent:iryna.markiv.v@gmail.com, OK
-2018-10-29 17:55:16.845036-->Sender:info-xbet@x-news.online | Recipent:ivannakanak777@gmail.com, OK
-2018-10-29 17:55:18.041208-->Sender:info-xbet@x-news.online | Recipent:bohdan.stepanko4@gmail.com, OK
-2018-10-29 17:55:19.232220-->Sender:info-xbet@x-news.online | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-29 19:16:26.470961-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@gmail.com, OK
-2018-10-29 19:16:27.757807-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@hotmail.com, OK
-2018-10-29 19:16:29.120068-->Sender:info-xbet@x-news.online | Recipent:dr4mk@hotmail.com, OK
-2018-10-29 19:16:32.002187-->Sender:info-xbet@x-news.online | Recipent:furkanyour@gmail.com, OK
-2018-10-29 19:25:47.396603-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@gmail.com, OK
-2018-10-29 19:25:48.459716-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@hotmail.com, OK
-2018-10-29 19:25:49.568508-->Sender:info-xbet@x-news.online | Recipent:dr4mk@hotmail.com, OK
-2018-10-29 19:25:50.722855-->Sender:info-xbet@x-news.online | Recipent:furkanyour@gmail.com, OK
-2018-10-29 19:25:51.763695-->Sender:info-xbet@x-news.online | Recipent:furkan_1199_fbr@hotmail.com, OK
-2018-10-29 19:57:09.388896-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@gmail.com, OK
-2018-10-29 19:57:10.776673-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@hotmail.com, OK
-2018-10-29 19:57:11.911370-->Sender:info-xbet@x-news.online | Recipent:dr4mk@hotmail.com, OK
-2018-10-29 19:57:13.347780-->Sender:info-xbet@x-news.online | Recipent:furkanyour@gmail.com, OK
-2018-10-29 19:57:14.644184-->Sender:info-xbet@x-news.online | Recipent:furkan_1199_fbr@hotmail.com, OK
-2018-10-29 20:05:19.455801-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@gmail.com, OK
-2018-10-29 20:05:21.415663-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@hotmail.com, OK
-2018-10-29 20:05:22.884616-->Sender:info-xbet@x-news.online | Recipent:dr4mk@hotmail.com, OK
-2018-10-29 20:05:24.795946-->Sender:info-xbet@x-news.online | Recipent:furkanyour@gmail.com, OK
-2018-10-29 20:05:28.316603-->Sender:info-xbet@x-news.online | Recipent:furkan_1199_fbr@hotmail.com, OK
-2018-10-29 20:06:44.996521-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@gmail.com, OK
-2018-10-29 20:06:46.439319-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@hotmail.com, OK
-2018-10-29 20:06:47.735857-->Sender:info-xbet@x-news.online | Recipent:dr4mk@hotmail.com, OK
-2018-10-29 20:06:48.999586-->Sender:info-xbet@x-news.online | Recipent:furkanyour@gmail.com, OK
-2018-10-29 20:06:50.087482-->Sender:info-xbet@x-news.online | Recipent:furkan_1199_fbr@hotmail.com, OK
-2018-10-29 20:08:00.582211-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@gmail.com, OK
-2018-10-29 20:08:01.946939-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@hotmail.com, OK
-2018-10-29 20:08:03.045477-->Sender:info-xbet@x-news.online | Recipent:dr4mk@hotmail.com, OK
-2018-10-29 20:08:04.411640-->Sender:info-xbet@x-news.online | Recipent:furkanyour@gmail.com, OK
-2018-10-29 20:08:05.801279-->Sender:info-xbet@x-news.online | Recipent:furkan_1199_fbr@hotmail.com, OK
-2018-10-29 22:13:46.252571-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@gmail.com, OK
-2018-10-29 22:13:47.633511-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@hotmail.com, OK
-2018-10-29 22:13:48.757289-->Sender:info-xbet@x-news.online | Recipent:danielmiller@x-bet.co, OK
-2018-10-29 22:13:50.416717-->Sender:info-xbet@x-news.online | Recipent:neizzhalyi@gmail.com, OK
-2018-10-29 22:13:51.801676-->Sender:info-xbet@x-news.online | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-29 22:13:53.005163-->Sender:info-xbet@x-news.online | Recipent:070leyk@gmail.com, OK
-2018-10-29 22:13:54.253974-->Sender:info-xbet@x-news.online | Recipent:tatianahetman5@gmail.com, OK
-2018-10-29 22:13:55.522133-->Sender:info-xbet@x-news.online | Recipent:iryna.markiv.v@gmail.com, OK
-2018-10-29 22:13:56.807977-->Sender:info-xbet@x-news.online | Recipent:ivannakanak777@gmail.com, OK
-2018-10-29 22:13:59.004306-->Sender:info-xbet@x-news.online | Recipent:bohdan.stepanko4@gmail.com, OK
-2018-10-29 22:14:00.251780-->Sender:info-xbet@x-news.online | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-29 22:16:43.130582-->Sender:info-xbet@x-news.online | Recipent:totobet100@outlook.com, OK
-2018-10-29 23:14:57.982321-->Sender:info-xbet@x-news.online | Recipent:danielnmiller@hotmail.com, OK
-2018-10-29 23:16:45.473608-->Sender:info-xbet@x-news.online | Recipent:totobet100@houtlook.com, OK
-2018-10-29 23:16:46.673452-->Sender:info-xbet@x-news.online | Recipent:hasan_bayraktar@hotmail.com, OK
-2018-10-30 17:05:03.953859-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@gmail.com, OK
-2018-10-30 17:05:05.238288-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@hotmail.com, OK
-2018-10-30 17:05:06.600290-->Sender:info-xbet@x-news.online | Recipent:danielmiller@x-bet.co, OK
-2018-10-30 17:05:07.869068-->Sender:info-xbet@x-news.online | Recipent:neizzhalyi@gmail.com, OK
-2018-10-30 17:05:09.163302-->Sender:info-xbet@x-news.online | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-30 17:05:10.744057-->Sender:info-xbet@x-news.online | Recipent:070leyk@gmail.com, OK
-2018-10-30 17:05:12.028908-->Sender:info-xbet@x-news.online | Recipent:tatianahetman5@gmail.com, OK
-2018-10-30 17:05:13.316278-->Sender:info-xbet@x-news.online | Recipent:iryna.markiv.v@gmail.com, OK
-2018-10-30 17:05:14.587279-->Sender:info-xbet@x-news.online | Recipent:ivannakanak777@gmail.com, OK
-2018-10-30 17:05:16.475766-->Sender:info-xbet@x-news.online | Recipent:bohdan.stepanko4@gmail.com, OK
-2018-10-30 17:05:18.087767-->Sender:info-xbet@x-news.online | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-31 00:18:31.232028-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@gmail.com, OK
-2018-10-31 00:18:41.265798-->Sender:info-xbet@x-news.online | Recipent:070leyk@gmail.com, OK
-2018-10-31 00:18:47.755819-->Sender:info-xbet@x-news.online | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-31 00:22:54.251262-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@gmail.com, OK
-2018-10-31 00:22:58.824225-->Sender:news-x-bet@x-news.online | Recipent:furkanfbr@hotmail.com, OK
-2018-10-31 00:23:03.214906-->Sender:x-bet-co@x-news.online | Recipent:danielmiller@x-bet.co, OK
-2018-10-31 00:23:07.687965-->Sender:xbet-informing@x-news.online | Recipent:neizzhalyi@gmail.com, OK
-2018-10-31 00:23:11.939626-->Sender:x-bet@x-news.online | Recipent:taras.kizlyk93@gmail.com, OK
-2018-10-31 00:23:16.374447-->Sender:info-xbet@x-news.online | Recipent:070leyk@gmail.com, OK
-2018-10-31 00:23:20.906322-->Sender:news-x-bet@x-news.online | Recipent:tatianahetman5@gmail.com, OK
-2018-10-31 00:23:25.369853-->Sender:x-bet-co@x-news.online | Recipent:iryna.markiv.v@gmail.com, OK
-2018-10-31 00:23:29.853613-->Sender:xbet-informing@x-news.online | Recipent:ivannakanak777@gmail.com, OK
-2018-10-31 00:23:34.014083-->Sender:x-bet@x-news.online | Recipent:bohdan.stepanko4@gmail.com, OK
-2018-10-31 00:23:38.008862-->Sender:info-xbet@x-news.online | Recipent:hasan_bayraktaroglu@hotmail.com, OK
-2018-10-31 23:10:32.788112-->Sender:info-xbet@x-news.online | Recipent:dr4mk@hotmail.com, OK
-2018-10-31 23:10:36.168313-->Sender:news-x-bet@x-news.online | Recipent:furkan_1199_fbr@hotmail.com, OK
-2018-10-31 23:10:39.294442-->Sender:x-bet-co@x-news.online | Recipent:furkanfbr@hotmail.com, OK
-2018-10-31 23:11:14.477225-->Sender:info-xbet@x-news.online | Recipent:dr4mk@hotmail.com, OK
-2018-10-31 23:11:17.302012-->Sender:news-x-bet@x-news.online | Recipent:furkan_1199_fbr@hotmail.com, OK
-2018-10-31 23:11:20.211318-->Sender:x-bet-co@x-news.online | Recipent:furkanfbr@hotmail.com, OK
-2018-10-31 23:18:51.297568-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@gmail.com, DENY :{'furkanfbr@gmail.com': (554, b'5.7.1 <furkanfbr@gmail.com>: Relay access denied')}
-2018-10-31 23:20:31.785465-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@gmail.com, DENY :{'furkanfbr@gmail.com': (554, b'5.7.1 <furkanfbr@gmail.com>: Relay access denied')}
-2018-10-31 23:21:23.685608-->Sender:x-bet@x-news.online | Recipent:furkanfbr@gmail.com, DENY :{'furkanfbr@gmail.com': (554, b'5.7.1 <furkanfbr@gmail.com>: Relay access denied')}
-2018-10-31 23:21:33.777677-->Sender:x-bet-co@x-news.online | Recipent:furkanfbr@gmail.com, DENY :{'furkanfbr@gmail.com': (554, b'5.7.1 <furkanfbr@gmail.com>: Relay access denied')}
-2018-10-31 23:25:09.716360-->Sender:info-xbet@x-news.online | Recipent:st-3-aednind0z@glockapps.com, DENY :{'st-3-aednind0z@glockapps.com': (554, b'5.7.1 <st-3-aednind0z@glockapps.com>: Relay access denied')}
-2018-10-31 23:26:04.684561-->Sender:info-xbet@x-news.online | Recipent:st-3-afyagk5c1@glockapps.com, DENY :{'st-3-afyagk5c1@glockapps.com': (554, b'5.7.1 <st-3-afyagk5c1@glockapps.com>: Relay access denied')}
-2018-11-01 07:33:43.521258-->Sender:info-xbet@x-news.online | Recipent:st-3-afyagk5c1@glockapps.com, DENY :{'st-3-afyagk5c1@glockapps.com': (554, b'5.7.1 <st-3-afyagk5c1@glockapps.com>: Relay access denied')}
-2018-11-01 07:35:25.704736-->Sender:info-xbet@x-news.online | Recipent:st-3-afyagk5c1@glockapps.com, DENY :{'st-3-afyagk5c1@glockapps.com': (554, b'5.7.1 <st-3-afyagk5c1@glockapps.com>: Relay access denied')}
-2018-11-01 07:35:56.791568-->Sender:info-xbet@x-news.online | Recipent:st-3-afyagk5c1@glockapps.com, DENY :{'st-3-afyagk5c1@glockapps.com': (554, b'5.7.1 <st-3-afyagk5c1@glockapps.com>: Relay access denied')}
-2018-11-01 07:37:33.216174-->Sender:info-xbet@x-news.online | Recipent:st-3-afyagk5c1@glockapps.com, DENY :{'st-3-afyagk5c1@glockapps.com': (554, b'5.7.1 <st-3-afyagk5c1@glockapps.com>: Relay access denied')}
-2018-11-01 07:42:39.974364-->Sender:info-xbet@x-news.online | Recipent:st-3-afyagk5c1@glockapps.com, DENY :{'st-3-afyagk5c1@glockapps.com': (554, b'5.7.1 <st-3-afyagk5c1@glockapps.com>: Relay access denied')}
-2018-11-01 08:02:06.441782-->Sender:info-xbet@x-news.online | Recipent:dr4mk@hotmail.com, OK
-2018-11-01 08:02:07.745700-->Sender:info-xbet@x-news.online | Recipent:furkan_1199_fbr@hotmail.com, OK
-2018-11-01 08:02:09.305621-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@hotmail.com, OK
-2018-11-01 08:02:41.905591-->Sender:info-xbet@x-news.online | Recipent:dr4mk@hotmail.com, OK
-2018-11-01 08:02:43.439274-->Sender:info-xbet@x-news.online | Recipent:furkan_1199_fbr@hotmail.com, OK
-2018-11-01 08:02:45.154035-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@hotmail.com, OK
-2018-11-01 08:10:36.618152-->Sender:info-xbet@x-news.online | Recipent:dr4mk@hotmail.com, OK
-2018-11-01 08:10:38.009489-->Sender:info-xbet@x-news.online | Recipent:furkan_1199_fbr@hotmail.com, OK
-2018-11-01 08:10:40.320906-->Sender:info-xbet@x-news.online | Recipent:furkanfbr@hotmail.com, OK

@@ -7,4 +7,5 @@ xmltodict
 PyGithub
 dnspython
 entrypoint2
+pycrypto
 

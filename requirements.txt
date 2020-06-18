@@ -5,6 +5,6 @@ xlwt
 openpyxl
 xmltodict
 PyGithub
-nspython
+dnspython
 entrypoint2
 
